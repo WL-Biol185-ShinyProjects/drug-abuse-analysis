@@ -59,8 +59,6 @@ View(overdose_df)
 overdose_df$TotalKnownDeath <- sapply(1:nrow(overdose_df), function(row) { sum (overdose_df[row, 5:13])})
 overdose_df$TotalKnownDeath <- ifelse(overdose_df$TotalKnownDeath>0, 1, 0)
 
-View(overdose_df)
-
 #Filter dataframe for values of TotalDeath that do not equal zero, this gives data frame with drug use specified
 #Also creates a general data frame with all states/months regeardless of specificty
 overdose_specific <- overdose_df %>%
