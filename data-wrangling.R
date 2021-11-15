@@ -7,6 +7,7 @@ library(tidyverse)
 
 #opens the files and puts them into a data frame
 overdose_df <- read_csv("~/data/VSRR_Provisional_Drug_Overdose_Death_Counts.csv")
+overdose_df <- read_csv("~/drug-abuse-analysis/VSRR_Provisional_Drug_Overdose_Death_Counts.csv")
 
 #renames column names to remove space from them
 overdose_df <- overdose_df %>%
@@ -70,6 +71,7 @@ View(overdose_all)
 
 #Saves wrangled data frame into a csv file
 #write.csv(overdose_df, file = "home/kohlj22/datawrangling/overdose_df.csv")
+#write.csv(overdose_df, file = "home/kohlj22/drug-abuse-analysis/overdose_df.csv")
 
 #Going forward: decide on which month to use for a given state in a given year and finish creating totalDeath column based on sapply function & save each data frame as .csv files
 
