@@ -1,5 +1,4 @@
 library(shiny)
-<<<<<<< HEAD
 # <<<<<<< HEAD
 fluidPage(
   sidebarLayout(
@@ -20,7 +19,6 @@ fluidPage(
   )
     )
 )
-=======
 
 library(shinydashboard)
 library(ggplot2)
@@ -55,7 +53,6 @@ dashboardPage(
       menuItem(
         "Pharmaceutical Industry Effects", tabName = "PharmaceuticalIndustryEffects", icon = icon("pills")),
       menuItem(
-        "About", tabName = "about", icon = icon("info-circle")
         "Big Pharma Performance", tabName = "BigPharmaPerformance", icon = icon("chart-line")
       )
     )),
@@ -65,5 +62,4 @@ dashboardPage(
     )
   ))
 
->>>>>>> e177167ad2caa92ee95b4df1b30d23c5cc3e5ac8
 #>>>>>>> e177167ad2caa92ee95b4df1b30d23c5cc3e5ac8
