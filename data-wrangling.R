@@ -62,10 +62,8 @@ overdose_df$TotalKnownDeath <- ifelse(overdose_df$TotalKnownDeath>0, 1, 0)
 #Also creates a general data frame with all states/months regeardless of specificty
 overdose_specific <- overdose_df %>%
   filter(TotalKnownDeath != 0)
-View(overdose_specific)
 
 overdose_all <- overdose_df
-View(overdose_all)
 
 #Saves wrangled data frame into a csv file
 #write.csv(overdose_df, file = "home/kohlj22/drug-abuse-analysis/overdose_df.csv")
