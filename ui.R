@@ -54,6 +54,7 @@ dashboardPage(
         "Pharmaceutical Industry Effects", tabName = "PharmaceuticalIndustryEffects", icon = icon("pills")),
       menuItem(
         "About", tabName = "about", icon = icon("info-circle")
+        "Big Pharma Performance", tabName = "BigPharmaPerformance", icon = icon("chart-line")
       )
     )),
   dashboardBody(

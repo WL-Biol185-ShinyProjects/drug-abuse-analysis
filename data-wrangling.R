@@ -6,7 +6,6 @@ library(tidyverse)
 
 
 #opens the files and puts them into a data frame
-overdose_df <- read_csv("~/data/VSRR_Provisional_Drug_Overdose_Death_Counts.csv")
 overdose_df <- read_csv("~/drug-abuse-analysis/VSRR_Provisional_Drug_Overdose_Death_Counts.csv")
 
 #renames column names to remove space from them
@@ -54,7 +53,6 @@ overdose_df[is.na(overdose_df)] <- 0
 
 #Reorders columns to put drug overdose death column towards left of data frame
 overdose_df <- overdose_df[, c(1, 2, 3, 10, 4, 5, 6, 7, 8, 9, 11, 12, 13)]
-View(overdose_df)
 
 #Gets the total overdose deaths and the drug that caused in for the whole country for every year (Dr. Whitworth showed me this method), now used as indicator for specific drug identified
 overdose_df$TotalKnownDeath <- sapply(1:nrow(overdose_df), function(row) { sum (overdose_df[row, 5:13])})
@@ -70,7 +68,6 @@ overdose_all <- overdose_df
 View(overdose_all)
 
 #Saves wrangled data frame into a csv file
-#write.csv(overdose_df, file = "home/kohlj22/datawrangling/overdose_df.csv")
 #write.csv(overdose_df, file = "home/kohlj22/drug-abuse-analysis/overdose_df.csv")
 
 #Going forward: decide on which month to use for a given state in a given year and finish creating totalDeath column based on sapply function & save each data frame as .csv files
