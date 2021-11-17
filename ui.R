@@ -1,5 +1,6 @@
 library(shiny)
 <<<<<<< HEAD
+# <<<<<<< HEAD
 fluidPage(
   sidebarLayout(
     sidebarPanel(
@@ -20,6 +21,7 @@ fluidPage(
     )
 )
 =======
+
 library(shinydashboard)
 library(ggplot2)
 library(tidyverse)
@@ -64,3 +66,4 @@ dashboardPage(
   ))
 
 >>>>>>> e177167ad2caa92ee95b4df1b30d23c5cc3e5ac8
+#>>>>>>> e177167ad2caa92ee95b4df1b30d23c5cc3e5ac8
