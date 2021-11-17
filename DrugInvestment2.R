@@ -68,9 +68,10 @@ InvestmentStates <-
   fluidRow(
     box(
       titlePanel("Timeline of State Investment in Drugs"),
-      "The Growth of Statewide Investment in Drugs in the United States from 1991 to 2014 using a log scale to view the change in values.",
+      "The Growth of Statewide Investment in Drugs in states per capita from 1991 to 2014",
       width = 12,
       leafletOutput("InvestmentOvertime"),
       sliderInput("yearsforinvestment", "year", min(geo@data$years), max(geo@data$years), value = min(geo@data$years), animate = TRUE)
     )
   )
+
