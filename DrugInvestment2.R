@@ -24,44 +24,44 @@ geo <- readOGR("states.geo.json")
 
 newData  <- left_join(geo@data, UpdatedSIID, by = c("NAME" = "States"))
 geo@data <- newData
-View(geo@data)
+
 
 #Loading data for US population over the given years
 devtools::install_github("nsgrantham/uspops")
 
 library(uspops)
 
-View(state_pops)
+
 #Filtering for the given years
 NewPops <- state_pops %>%
   select(year, state, pop) %>%
   filter(year > "1990" & year < "2015")
-View(NewPops)
+
 #data cleanup
 NewPops2 <- spread(NewPops, key = year, value = pop)
-View(NewPops2)
+
 
 NewPops5 <- NewPops2 %>% gather("years", "pops", 2:25)
-View(NewPops5)
+
 
 geo@data <- geo@data %>% gather("years", "Investments", 6:29)
-View(geo@data)
+
 
 geo@data$Investments <- geo@data$Investments * 1000000
-View(geo@data)
+
 #Joining population data to main data set
 NewData3 <- left_join(geo@data, NewPops5, by = c("NAME" = "state", "years" = "years"))
 geo@data <- NewData3
-View(geo@data)
+
 #Getting rid of lack of data for Puerto Rico
 geo@data <- geo@data %>%
   filter(NAME != "Puerto Rico")
 #creating investment per capita column
 geo@data$InvestmentPerCapita <- geo@data$Investments / geo@data$pops
-View(geo@data)
+
 
 geo@data$years <- as.numeric(geo@data$years)
-View(geo@data)
+
 
 #getting to the poin to throw into Leaflet
 InvestmentStates <- 
