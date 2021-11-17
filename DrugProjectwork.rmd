@@ -1,0 +1,149 @@
+---
+title: "Project"
+output: html_document
+---
+
+```{r}
+library("readxl")
+StateInvestmentInDrugs <- read_excel("StateInvestmentInDrugs.xlsx")
+```
+
+#Getting rid of regional rows
+```{r}
+UpdatedSIID <- StateInvestmentInDrugs[-c(2, 3, 10, 17, 23, 31, 44, 49, 55), ]
+```
+
+```{r}
+names(UpdatedSIID) <- as.matrix(UpdatedSIID[1, ])
+UpdatedSIID <- UpdatedSIID[-1, ]
+UpdatedSIID [] <- lapply(UpdatedSIID, function(x) type.convert(as.character(x)))
+```
+
+```{r}
+UpdatedSIID <- UpdatedSIID[-c(26)]
+```
+```{r}
+names(UpdatedSIID)[names(UpdatedSIID) == 'Region/state of residence'] <- 'States'
+```
+
+
+```{r}
+library(leaflet)
+library(rgdal)
+```
+```{r}
+geo <- readOGR("states.geo.json")
+```
+
+```{r}
+library(dplyr)
+newData  <- left_join(geo@data, UpdatedSIID, by = c("NAME" = "States"))
+geo@data <- newData
+View(geo@data)
+```
+
+
+```{r}
+IIDpalette <- colorBin("Purples", domain = geo@data$`1991.x`)
+```
+```{r}
+?addPolygons
+```
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+devtools::install_github("nsgrantham/uspops")
+```
+
+```{r}
+library(uspops)
+```
+
+```{r}
+View(state_pops)
+```
+
+```{r}
+NewPops <- state_pops %>%
+  select(year, state, pop) %>%
+  filter(year > "1990" & year < "2015")
+View(NewPops)
+```
+
+```{r}
+NewPops2 <- spread(NewPops, key = year, value = pop)
+View(NewPops2)
+```
+
+```{r}
+NewPops2 <- NewPops2 %>% slice(-c(40))
+```
+
+```{r}
+geo@data <- geo@data %>% slice(-c(17))
+```
+
+```{r}
+NewPops3 <- data.frame(t(NewPops2[-1]))
+colnames(NewPops3) <- NewPops2[, 1]
+View(NewPops3)
+```
+
+```{r}
+library(tidyr)
+NewPops4 <- NewPops3 %>% gather("states", "pops", 1:51) 
+View(NewPops4)
+```
+
+```{r}
+
+NewPops5 <- NewPops2 %>% gather("years", "pops", 2:25)
+```
+
+```{r}
+geo@data <- geo@data %>% gather("years", "Investments", 6:29)
+View(geo@data)
+```
+
+```{r}
+geo@data$Investments <- geo@data$Investments * 1000000
+View(geo@data)
+```
+
+```{r}
+NewData3 <- left_join(geo@data, NewPops5, by = c("NAME" = "state", "years" = "years"))
+geo@data <- NewData3
+View(geo@data)
+```
+
+```{r}
+geo@data$pops.y <- NULL
+View(geo@data)
+```
+
+```{r}
+geo@data$InvestmentPerCapita <- geo@data$Investments / geo@data$pops
+View(geo@data)
+```
+
+```{r}
+leaflet(data = geo) %>% 
+  setView(-96, 37.8, 4) %>%
+  addPolygons(fillColor = ~IIDpalette(`1991`), 
+              weight = 1, 
+              smoothFactor = 0.5, 
+              label = geo@data$NAME,
+              opacity = 1.0, 
+              color = "black", 
+              fillOpacity = 0.5) %>%
+  addLegend("bottomright",
+            pal = IIDpalette,
+            values = ~`1991`,
+            opacity = .8,
+            title = ("State Investment in Drugs"))
+```
+
+
