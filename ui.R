@@ -1,25 +1,4 @@
 library(shiny)
-# <<<<<<< HEAD
-fluidPage(
-  sidebarLayout(
-    sidebarPanel(
-      sliderInput("number",
-                  label = "Choose a number",
-                  min = 0,
-                  max = 100,
-                  value = 50
-                  ),
-      selectInput("distribution",
-                  label = "Choose a distribution",
-                  choices = c("normal", "uniform", "poisson"))
-    ),
-  mainPanel(
-    plotOutput("histogram"),
-    textOutput("summary")
-  )
-    )
-)
-
 library(shinydashboard)
 library(ggplot2)
 library(tidyverse)
@@ -29,6 +8,7 @@ library(leaflet)
 library(stringr)
 
 source("DrugInvestment2.R")
+source("HomePage.R")
 
 #making the dashboard
 dashboardPage(
@@ -58,8 +38,8 @@ dashboardPage(
     )),
   dashboardBody(
     tabItems(
-      tabItem("Healthcare", InvestmentStates)
+      tabItem("Home", homepagetext),
+      tabItem("PrescriptionDrugInvestment", InvestmentStates)
     )
   ))
 
-#>>>>>>> e177167ad2caa92ee95b4df1b30d23c5cc3e5ac8
