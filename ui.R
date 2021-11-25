@@ -9,6 +9,7 @@ library(stringr)
 
 source("DrugInvestment2.R")
 source("HomePage.R")
+source("StateDrugDataPage.R")
 
 #making the dashboard
 dashboardPage(
@@ -39,7 +40,8 @@ dashboardPage(
   dashboardBody(
     tabItems(
       tabItem("Home", homepagetext),
-      tabItem("PrescriptionDrugInvestment", InvestmentStates)
+      tabItem("PrescriptionDrugInvestment", InvestmentStates),
+      tabItem("States", StateDrugData)
     )
   ))
 

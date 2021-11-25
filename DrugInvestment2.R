@@ -3,7 +3,7 @@ library(leaflet)
 library(tidyverse)
 library(rgdal)
 library(dplyr)
-
+library(lubridate)
 library("readxl")
 StateInvestmentInDrugs <- read_excel("StateInvestmentInDrugs.xlsx")
 
@@ -19,10 +19,10 @@ UpdatedSIID <- UpdatedSIID[-c(26)]
 names(UpdatedSIID)[names(UpdatedSIID) == 'Region/state of residence'] <- 'States'
 
 #Loading state map
-geo <- readOGR("states.geo.json")
+Geo <- readOGR("states.geo.json")
 #Joining state map with investment in Drug data
 
-newData  <- left_join(geo@data, UpdatedSIID, by = c("NAME" = "States"))
+newData  <- left_join(Geo@data, UpdatedSIID, by = c("NAME" = "States"))
 geo@data <- newData
 
 
@@ -60,10 +60,10 @@ geo@data <- geo@data %>%
 geo@data$InvestmentPerCapita <- geo@data$Investments / geo@data$pops
 
 
-geo@data$years <- as.numeric(geo@data$years)
+geo@data$InvestmentPerCapita <- as.numeric(unlist(geo@data$InvestmentPerCapita))
+geo@data$years <- as.numeric(unlist(geo@data$years))
 
-
-#getting to the poin to throw into Leaflet
+#getting to the point to throw into Leaflet
 InvestmentStates <- 
   fluidRow(
     box(
@@ -71,7 +71,7 @@ InvestmentStates <-
       "The Growth of Statewide Investment in Drugs in states per capita from 1991 to 2014",
       width = 12,
       leafletOutput("InvestmentOvertime"),
-      sliderInput("yearsforinvestment", "year", min(geo@data$years), max(geo@data$years), value = min(geo@data$years), animate = TRUE)
+      sliderInput(inputId = "yearsforinvestment", label = "years", min(geo@data$years), max(geo@data$years), value = min(geo@data$years), animate = TRUE)
     )
   )
 
