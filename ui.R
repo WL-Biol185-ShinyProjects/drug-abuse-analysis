@@ -10,6 +10,8 @@ library(stringr)
 source("DrugInvestment2.R")
 source("HomePage.R")
 source("StateDrugDataPage.R")
+source("BigPharmaPerformance.R")
+source("AboutPage.R")
 
 #making the dashboard
 dashboardPage(
@@ -32,16 +34,18 @@ dashboardPage(
       menuItem(
         "Prescription Drug Investment", tabName = "PrescriptionDrugInvestment", icon = icon("dollar-sign")),
       menuItem(
-        "Pharmaceutical Industry Effects", tabName = "PharmaceuticalIndustryEffects", icon = icon("pills")),
-      menuItem(
-        "Big Pharma Performance", tabName = "BigPharmaPerformance", icon = icon("chart-line")
-      )
+        "Big Pharma Performance", tabName = "BigPharmaPerformance", icon = icon("chart-line")),
+        menuItem(
+          "About", tabName = "About", icon = icon("pills"))
     )),
   dashboardBody(
     tabItems(
       tabItem("Home", homepagetext),
       tabItem("PrescriptionDrugInvestment", InvestmentStates),
-      tabItem("States", StateDrugData)
+      tabItem("States", StateDrugData),
+      tabItem("BigPharmaPerformance", BigPharmaPerformanceText),
+      tabItem("About", AboutPageText)
+      )
     )
-  ))
+  )
 

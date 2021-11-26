@@ -6,13 +6,14 @@ library(ggplot2)
 source("DrugInvestment2.R")
 source("HomePage.R")
 source("StateDrugDataPage.R")
+source("BigPharmaPerformance.R")
 
 function(input, output) {
     output$InvestmentOvertime <- renderLeaflet({
     FilteredStateData <- filter(geo@data, years == input$yearsforinvestment)
     geo@data <- left_join(geo@data, FilteredStateData, by = c("NAME" = "NAME"))
     statespalette <- colorBin("Purples", domain = geo@data$InvestmentPerCapita)
-    leafletProxy("polygons", session = shiny::getDefaultReactiveDomain(), data = geo, deferUntilFlush = TRUE) %>%
+    leafletProxy("InvestmentPerCapita", data = geo, deferUntilFlush = TRUE) %>%
       setView(-96, 37.8, 4) %>%
       addPolygons(
         fillColor = ~statespalette(geo@data$InvestmentPerCapita),
