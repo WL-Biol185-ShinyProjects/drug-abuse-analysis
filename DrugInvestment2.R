@@ -32,10 +32,10 @@ devtools::install_github("nsgrantham/uspops")
 
 library(uspops)
 
-geo@data <- geo@data %>% gather("years", "Investments", 6:29)
-
 write.csv(NewPops, 'Statepops')
 state_pops <- read.csv("Statepops")
+
+geo@data <- geo@data %>% gather("years", "Investments", 6:29)
 
 #Filtering for the given years
 NewPops <- state_pops %>%
