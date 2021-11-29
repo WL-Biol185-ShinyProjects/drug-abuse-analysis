@@ -20,6 +20,7 @@ names(UpdatedSIID)[names(UpdatedSIID) == 'Region/state of residence'] <- 'States
 
 #Loading state map
 Geo <- readOGR("states.geo.json")
+
 #Joining state map with investment in Drug data
 
 newData  <- left_join(Geo@data, UpdatedSIID, by = c("NAME" = "States"))
@@ -31,8 +32,11 @@ devtools::install_github("nsgrantham/uspops")
 
 library(uspops)
 
-write.csv(us_pops, file = 'uspops.csv')
-state_pops <- read.csv("uspops.csv")
+write.csv(NewPops, 'Statepops')
+
+state_pops <- read.csv("Statepops")
+
+geo@data <- geo@data %>% gather("years", "Investments", 6:29)
 
 #Filtering for the given years
 NewPops <- state_pops %>%
@@ -45,14 +49,11 @@ NewPops2 <- spread(NewPops, key = year, value = pop)
 
 NewPops5 <- NewPops2 %>% gather("years", "pops", 2:25)
 
-
-geo@data <- geo@data %>% gather("years", "Investments", 6:29)
-
-
 geo@data$Investments <- geo@data$Investments * 1000000
 
 #Joining population data to main data set
 NewData3 <- left_join(geo@data, NewPops5, by = c("NAME" = "state", "years" = "years"))
+
 geo@data <- NewData3
 
 #Getting rid of lack of data for Puerto Rico
@@ -65,6 +66,9 @@ geo@data$InvestmentPerCapita <- geo@data$Investments / geo@data$pops
 geo@data$InvestmentPerCapita <- as.numeric(unlist(geo@data$InvestmentPerCapita))
 geo@data$years <- as.numeric(unlist(geo@data$years))
 
+write.csv(geo@data, 'geo@data')
+geo@data <- read.csv("geo@data")
+
 #getting to the point to throw into Leaflet
 InvestmentStates <- 
   fluidRow(
@@ -76,4 +80,3 @@ InvestmentStates <-
       sliderInput(inputId = "yearsforinvestment", label = "years", min(geo@data$years), max(geo@data$years), value = min(geo@data$years), animate = TRUE)
     )
   )
-
