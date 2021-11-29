@@ -66,7 +66,8 @@ overdose_specific <- overdose_df %>%
 overdose_all <- overdose_df
 
 #Saves wrangled data frame into a csv file
-#write.csv(overdose_df, file = "home/kohlj22/drug-abuse-analysis/overdose_df.csv")
+write.csv(overdose_all, file = 'overdose_all.csv')
+write.csv(overdose_specific, file = 'overdose_specific.csv')
 
-#Going forward: decide on which month to use for a given state in a given year and finish creating totalDeath column based on sapply function & save each data frame as .csv files
+#Going forward: decide on which month to use for a given state in a given year and finish creating totalDeath column based on sapply function
 
