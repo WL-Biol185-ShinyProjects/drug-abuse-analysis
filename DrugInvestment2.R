@@ -31,6 +31,8 @@ devtools::install_github("nsgrantham/uspops")
 
 library(uspops)
 
+write.csv(us_pops, file = 'uspops.csv')
+state_pops <- read.csv("uspops.csv")
 
 #Filtering for the given years
 NewPops <- state_pops %>%
