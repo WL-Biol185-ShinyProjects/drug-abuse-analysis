@@ -66,4 +66,4 @@ geo@data$InvestmentPerCapita <- geo@data$Investments / geo@data$pops
 geo@data$InvestmentPerCapita <- as.numeric(unlist(geo@data$InvestmentPerCapita))
 geo@data$years <- as.numeric(unlist(geo@data$years))
 
-write.csv(geo@data, 'geo@data.csv')
+write.csv(geo@data, 'geoIPC.csv')

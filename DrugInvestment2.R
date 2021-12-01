@@ -6,7 +6,7 @@ library(dplyr)
 library(lubridate)
 library("readxl")
 
-geo@data <- read.csv("geo@data.csv")
+geoIPC <- read.csv("geoIPC.csv")
 
 #getting to the point to throw into Leaflet
 InvestmentStates <- 
@@ -16,6 +16,6 @@ InvestmentStates <-
       "The Growth of Statewide Investment in Drugs in states per capita from 1991 to 2014",
       width = 12,
       leafletOutput("InvestmentOvertime"),
-      sliderInput(inputId = "yearsforinvestment", label = "years", min(geo@data$years), max(geo@data$years), value = min(geo@data$years), animate = TRUE)
+      sliderInput(inputId = "yearsforinvestment", label = "years", min(geoIPC$years), max(geoIPC$years), value = min(geoIPC$years), animate = TRUE)
     )
   )
