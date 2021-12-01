@@ -11,19 +11,18 @@ source("BigPharmaPerformance.R")
 
 function(input, output) {
     output$InvestmentOvertime <- renderLeaflet({
-    FilteredStateData <- filter(geoIPC, years == input$yearsforinvestment)
-    geoIPC <- left_join(geoIPC, FilteredStateData, by = c("NAME" = "NAME"))
-    statespalette <- colorBin("Purples", domain = geoIPC$InvestmentPerCapita)
-    print(geoIPC)
-    leaflet(data = geo) %>%
-      setView(-96, 37.8, 4) %>%
-      addPolygons(
-        fillColor = ~statespalette(InvestmentPerCapita),
-    weight = 2,
-    label = geoIPC$NAME,
-    opacity = 1,
-    color = "black",
-    fillOpacity = .7 
+      FilteredStateData <- filter(geoIPC, years == input$yearsforinvestment)
+      geo@data <- left_join(geo@data, FilteredStateData, by = c("NAME" = "NAME"))
+      statespalette <- colorBin("Purples", domain = geoIPC$InvestmentPerCapita)
+      leaflet(data = geo) %>%
+        setView(-96, 37.8, 4) %>%
+        addPolygons(
+              fillColor = ~statespalette(InvestmentPerCapita),
+              weight = 2,
+              label = geoIPC$NAME,
+              opacity = 1,
+              color = "black",
+              fillOpacity = .7 
     ) %>%
     addLegend("bottomright",
               pal = statespalette,
