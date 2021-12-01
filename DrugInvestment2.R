@@ -6,6 +6,7 @@ library(dplyr)
 library(lubridate)
 library("readxl")
 
+geo <- readOGR("states.geo.json")
 geoIPC <- read.csv("geoIPC.csv")
 
 #getting to the point to throw into Leaflet
