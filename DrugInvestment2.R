@@ -17,6 +17,6 @@ InvestmentStates <-
       "The Growth of Statewide Investment in Drugs in states per capita from 1991 to 2014",
       width = 12,
       leafletOutput("InvestmentOvertime"),
-      sliderInput(inputId = "yearsforinvestment", label = "years", min(geoIPC$years), max(geoIPC$years), value = min(geoIPC$years), animate = TRUE)
+      sliderInput(inputId = "yearsforinvestment", label = "years", min(geoIPC$years), max(geoIPC$years), value = min(geoIPC$years), step = TRUE, animate = TRUE, sep = NULL)
     )
   )
