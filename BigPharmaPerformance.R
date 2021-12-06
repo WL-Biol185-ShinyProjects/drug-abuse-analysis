@@ -14,18 +14,15 @@ BigPharmaPerformanceText <-
 #   sidebarPanel(
 #     checkboxGroupInput(
 #       "yearInput",
-#       "Choose the Year:",
+#       "Select one or more Pharmaceutical Companies:",
 #       choices = list(
-#         "2011" = "2011",
-#         "2012" = "2012",
-#         "2013" = "2013",
-#         "2014" = "2014",
-#         "2015" = "2015",
-#         "2016" = "2016",
-#         "2017" = "2017",
-#         "2018" = "2018"
+#         "AMRX" = "2011",
+#         "CAH" = "2012",
+#         "MCK" = "2013",
+#         "PRX" = "2014",
+#         "TEVA" = "2015"
 #       ),
-#       selected = list("2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018"),
+#       selected = list("2011", "2012", "2013", "2014", "2015"),
 #       inline   = TRUE),
 #     selectInput(inputId = "Pharmaceutical Company",
 #                 label   = "Choose a Company:",
