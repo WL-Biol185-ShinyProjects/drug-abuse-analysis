@@ -40,3 +40,6 @@ BigPharmaPerformanceText <-
 #   mainPanel(plotOutput("myLineGraph"))
 # )
 # )
+
+# Going forward: pull SPY data as S&P 500 index so as to compare pharma performance to that of broader market, and wrangle data to include percent change of stock price
+# Lastly: finalize list of tickers to add to graph, needs to be linked to litigation or listed as a top opioid producer in the US
