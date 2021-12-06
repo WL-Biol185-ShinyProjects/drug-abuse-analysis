@@ -19,7 +19,7 @@ function(input, output) {
         addPolygons(
               fillColor = ~statespalette(InvestmentPerCapita),
               weight = 2,
-              label = geoIPC$NAME,
+              label = geo@data$NAME,
               opacity = 1,
               color = "black",
               fillOpacity = .7 

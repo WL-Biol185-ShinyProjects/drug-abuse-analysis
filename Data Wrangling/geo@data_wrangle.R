@@ -62,7 +62,6 @@ geo@data <- geo@data %>%
 #creating investment per capita column
 geo@data$InvestmentPerCapita <- geo@data$Investments / geo@data$pops
 
-
 geo@data$InvestmentPerCapita <- as.numeric(unlist(geo@data$InvestmentPerCapita))
 geo@data$years <- as.numeric(unlist(geo@data$years))
 
