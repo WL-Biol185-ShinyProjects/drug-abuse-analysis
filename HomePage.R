@@ -19,7 +19,7 @@ homepagetext <-
              width = 8,
       box(
         width = NULL,
-        title = "The Total Amount of Overdoses in Each State for January 2021",
+        title = "The Total Amount of Overdose Deaths in Each State for January 2021",
         leafletOutput("OverdoseMap"),
         "source")),
       column(
