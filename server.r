@@ -7,7 +7,7 @@ source("DrugInvestment2.R")
 source("HomePage.R")
 source("StateDrugDataPage.R")
 source("BigPharmaPerformance.R")
-source("HomePageMap.R")
+source("AboutPage.R")
 
 
 function(input, output) {

@@ -12,7 +12,7 @@ source("HomePage.R")
 source("StateDrugDataPage.R")
 source("BigPharmaPerformance.R")
 source("AboutPage.R")
-source("HomePageMap.R")
+
 
 
 #making the dashboard
