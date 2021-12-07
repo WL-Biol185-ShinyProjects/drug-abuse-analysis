@@ -13,7 +13,7 @@ homepagetext <-
                     status = "primary",
                     title = "What is Our Project?", 
                     background = "blue",
-                    "Our project is an analysis into where the United States is at as a nation in the drug crisis. Specefically, we examine several of the financial factors that correlate with the increase in drug overdoses."),
+                    "Our project is an analysis into where the United States is at presently in the drug crisis and how it got here. Specefically, we examine several of the financial factors that correlate with the increase in drug overdoses."),
       fluidRow(
            column( 
              width = 8,
