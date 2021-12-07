@@ -7,6 +7,7 @@ library(lubridate)
 library("readxl")
 StateInvestmentInDrugs <- read_excel("StateInvestmentInDrugs.xlsx")
 
+
 #Getting rid of regional rows
 UpdatedSIID <- StateInvestmentInDrugs[-c(2, 3, 10, 17, 23, 31, 44, 49, 55), ]
 
