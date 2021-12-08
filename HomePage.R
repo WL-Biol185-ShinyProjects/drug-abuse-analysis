@@ -13,7 +13,7 @@ homepagetext <-
                     status = "primary",
                     title = "What is Our Project?", 
                     background = "blue",
-                    "Our project is an analysis into where the United States is at presently in the drug crisis and how it got here. Specefically, we examine several of the financial factors that correlate with the increase in drug overdoses."),
+                    "Our project is a data analysis into where the United States is at presently in the drug crisis and several economic factors that may have contributed to it getting here. To examine the effects of the crisis we look at factors such as the total amount of drug overdoses over a given time peroid and the number of drug overdoses for specefic drugs. Economically, we look at the investment in drugs by Medicare and Medicaid from 1991 to 2014. We also examine the economic growth of some of the biggest pharmaceutical companies over the years when the drug crisis has most taken its toll."),
       fluidRow(
            column( 
              width = 8,
@@ -21,7 +21,7 @@ homepagetext <-
         width = NULL,
         title = "The Total Amount of Overdose Deaths in Each State for January 2021",
         leafletOutput("OverdoseMap"),
-        "source")),
+        "Source: Center for Disease Control")),
       column(
         width = 4,
     img(src = "NYTPic.png",
