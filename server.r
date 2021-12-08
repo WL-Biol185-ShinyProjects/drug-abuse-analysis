@@ -43,7 +43,7 @@ map <- leaflet(countryMap) %>%
   setView(-96, 37.8, 4)
 
 labels <- sprintf(
-  "<strong>%s<strong><br>NumberOfDrugOverdoseDeaths: %s",
+  "<strong>%s<strong><br>Number of Drug Overdose Deaths: %s",
   countryMap@data$NAME, 
   countryMap@data$NumberOfDrugOverdoseDeaths 
 ) %>% lapply(HTML)
@@ -51,7 +51,7 @@ labels <- sprintf(
 map %>% addPolygons(
   weight = 2,
   opacity = 1,
-  fillColor = "brown1",
+  fillColor = "lightblue",
   dashArray = "1",
   fillOpacity = 0.7,
   label = labels,
