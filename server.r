@@ -53,14 +53,49 @@ map %>% addPolygons(
   opacity = 1,
   fillColor = "lightblue",
   dashArray = "1",
+  color = "black",
   fillOpacity = 0.7,
   label = labels,
   highlight = highlightOptions(
     weight = 3,
-    color = "#666",
+    color = "black",
     dashArray = "",
     fillOpacity = 0.7,
-    bringToFront = TRUE))
+    bringToFront = TRUE
+  ))
 
     })
-    }
+    output$DrugOverdoseJan2015 <- renderLeaflet({
+      OverdoseDataJan2015 <- read.csv("OverdoseDataWPopEst2015.csv")
+      countryMap2 <- rgdal::readOGR("states.geo.json")
+      statespalette1 <- colorBin("Purples", domain = OverdoseDataJan2015$IOverdosePerCapita2015)
+      countryMap2@data <- left_join(countryMap2@data, 
+                                    OverdoseDataJan2015, 
+                                    by = c("NAME" = "StateName"))
+      
+      map <- leaflet(countryMap2) %>%
+        setView(-96, 37.8, 4)
+      
+      labels <- sprintf(
+        "<strong>%s<strong><br>Number of Drug Overdose Deaths: %s",
+        countryMap2@data$NAME, 
+        countryMap2@data$NumberOfDrugOverdoseDeaths 
+      ) %>% lapply(HTML)
+      
+      map %>% addPolygons(
+        weight = 2,
+        opacity = 1,
+        fillColor = ~statespalette1(IOverdosePerCapita2015),
+        dashArray = "1",
+        fillOpacity = 0.7,
+        color = "black",
+        label = labels,
+        highlight = highlightOptions(
+          weight = 3,
+          color = "black",
+          dashArray = "",
+          fillOpacity = 0.7,
+          bringToFront = TRUE))
+      
+    })
+}
