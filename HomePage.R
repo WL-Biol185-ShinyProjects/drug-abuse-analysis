@@ -23,7 +23,7 @@ homepagetext <-
                               width = NULL,
                               title = "The Total Amount of Overdose Deaths in Each State for January 2021",
                               leafletOutput("OverdoseMap"),
-                              "You can scroll over each state to view the total number of drug overdose deaths for that state in 2015.")),
+                              "You can scroll over each state to view the total number of drug overdose deaths for that state in 2021.")),
       column(
         width = 4,
     img(src = "NYTPic.png",
