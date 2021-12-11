@@ -10,7 +10,7 @@ geo <- readOGR("states.geo.json")
 geoIPC <- read.csv("geoIPC.csv")
 
 #getting to the point to throw into Leaflet
-InvestmentStates <- 
+InvestmentStatesText <- 
   fluidRow(
     box(
       titlePanel("Timeline of State Investment in Drugs"),
