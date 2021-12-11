@@ -1,7 +1,7 @@
 library(shiny)
 library(shinydashboard)
 library(markdown)
-
+#organizing home page
 homepagetext <-
   fluidPage(
      titlePanel("Home"),
@@ -24,9 +24,9 @@ homepagetext <-
                               title = "The Total Amount of Overdose Deaths in Each State for January 2021",
                               leafletOutput("OverdoseMap"),
                               "You can scroll over each state to view the total number of drug overdose deaths for that state in 2021.")),
-      column(
-        width = 4,
-    img(src = "NYTPic.png",
-    width = "100%",
-    length = "100%"
+                     column(
+                         width = 4,
+                               img(src = "NYTPic.png",
+                                       width = "100%",
+                                       length = "100%"
 ))))))
