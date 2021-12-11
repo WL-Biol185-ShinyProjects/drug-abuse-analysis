@@ -7,6 +7,7 @@ library(lubridate)
 library("readxl")
 StateInvestmentInDrugs <- read_excel("StateInvestmentInDrugs.xlsx")
 
+
 #Getting rid of regional rows
 UpdatedSIID <- StateInvestmentInDrugs[-c(2, 3, 10, 17, 23, 31, 44, 49, 55), ]
 
@@ -31,11 +32,11 @@ geo@data <- newData
 devtools::install_github("nsgrantham/uspops")
 
 library(uspops)
+View(uspops)
+write.csv(NewPops, 'Statepops.csv')
 
-write.csv(NewPops, 'Statepops')
-
-state_pops <- read.csv("Statepops")
-
+state_pops <- read.csv("Statepops.csv")
+View(Statepops)
 geo@data <- geo@data %>% gather("years", "Investments", 6:29)
 
 #Filtering for the given years
