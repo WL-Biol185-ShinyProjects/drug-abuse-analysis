@@ -134,10 +134,10 @@ function(input, output) {
     output$myLineGraph <- renderPlot(
       {
         BigPharmaStockData %>%
-          filter(tic %in% input$tic) %>%
-          ggplot(aes(x = ymd(datadate), y = prccm, color = tic, group = tic)) +
+          filter(conm %in% input$conm) %>%
+          ggplot(aes(x = ymd(datadate), y = prccm, color = conm, group = conm)) +
           geom_line() +
-          geom_point(aes(color = tic)) +
+          geom_point(aes(color = conm)) +
           xlab("Year")                                      +
           ylab("% Change in Monthly Closing Price")
       }

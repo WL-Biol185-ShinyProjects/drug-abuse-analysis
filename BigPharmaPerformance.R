@@ -19,10 +19,10 @@ BigPharmaPerformance <-
     sidebarLayout(
      sidebarPanel(
         selectInput(
-          inputId = "tic",
+          inputId = "conm",
           label = "Select one or more Pharmaceutical Companies:",
-          choices = unique(BigPharmaStockData$tic),
-          selected = 'AMRX',
+          choices = unique(BigPharmaStockData$conm),
+          selected = 'SPDR S&P 500 ETF TRUST',
           multiple = TRUE),
       ),
       mainPanel(plotOutput("myLineGraph"))
@@ -32,7 +32,7 @@ BigPharmaPerformance <-
     
     # Going forward: pull SPY data as S&P 500 index so as to compare pharma performance to that of broader market, and wrangle data to include percent change of stock price
     # Lastly: finalize list of tickers to add to graph, needs to be linked to litigation or listed as a top opioid producer in the US
-# List to pull: AMRX, CAH, TEVA, SPY, MCK, JNJ, MNK, WBA, 
+# List to pull: AMRX, CAH, TEVA, SPY, MCK, JNJ, MNK, WBA, CVS, WMT, RAD, KR, WPI, PRX, ENDP
     
 # output$unitPlot <- renderPlot({
 #   units_g %>%
