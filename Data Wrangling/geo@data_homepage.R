@@ -21,6 +21,6 @@ ODheatmapdata <- ODheatmapdata %>%
   filter(Indicator != "NA")
 ODheatmapdata$DataValue <- as.character(ODheatmapdata$DataValue)
 
-geo@data <- left_join(geo@data, ODheatmapdata, by = c("NAME" = "StateName"))
+# geo@data <- left_join(geo@data, ODheatmapdata, by = c("NAME" = "StateName"))
 
-write_csv(geo@data, "geoOverdoseStateHeatMaps.csv")
+write_csv(ODheatmapdata, "geoOverdoseStateHeatMaps.csv")

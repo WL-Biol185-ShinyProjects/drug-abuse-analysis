@@ -10,7 +10,6 @@ source("StateDrugDataPage.R")
 source("BigPharmaPerformance.R")
 source("AboutPage.R")
 
-#Function for Drug Investment tab
 function(input, output) {
     #2021 leaflet map for drug overdose deaths on the homepage
     output$OverdoseMap <- renderLeaflet({
@@ -46,45 +45,16 @@ function(input, output) {
     })
 
     #2021 leaflet map for specific drug overdose map on national drug abuse tab
-    # output$OverdoseSpecificMap <- renderLeaflet({
-    #   geoOverdoseStateMaps2021 <- read_csv("geoOverdoseStateMaps.csv") %>%
-    #     filter(colnames[9:18] %in% input$colnames_od)
-    #   countryMap <- rgdal::readOGR("states.geo.json")
-    #   countryMap@data <- left_join(countryMap@data, 
-    #                                geoOverdoseStateMaps2021, 
-    #                                by = c("NAME" = "NAME"))
-    #   
-    #   map <- leaflet(countryMap) %>%
-    #     setView(-96, 37.8, 4)
-    #   labels <- sprintf(
-    #     "<strong>%s<strong><br>Number of Drug Overdose Deaths: %s",
-    #     countryMap@data$NAME, 
-    #     countryMap@data$NumberOfDrugOverdoseDeaths 
-    #   ) %>% lapply(HTML)
-    #   
-    #   map %>% addPolygons(
-    #     weight = 2,
-    #     opacity = 1,
-    #     fillColor = "lightblue",
-    #     dashArray = "1",
-    #     color = "black",
-    #     fillOpacity = 0.7,
-    #     label = labels,
-    #     highlight = highlightOptions(
-    #       weight = 3,
-    #       color = "black",
-    #       dashArray = "",
-    #       fillOpacity = 0.7,
-    #       bringToFront = TRUE
-    #     ))
-    # })
-    
     output$OverdoseSpecificMap  <- renderLeaflet({
       geoOverdoseStateHeatMaps2021 <- read_csv("geoOverdoseStateHeatMaps.csv") %>%
            filter(Indicator %in% input$Indicator)
-      countryMap <- rgdal::readOGR("states.geo.json")
+      countryMap3 <- rgdal::readOGR("states.geo.json")
+      countryMap3@data <- left_join(countryMap3@data, 
+                                   geoOverdoseStateHeatMaps2021, 
+                                   by = c("NAME" = "StateName"))
+      # countryMap3@data <- geoOverdoseStateHeatMaps2021
         pal <- colorNumeric("YlOrRd", NULL)
-        leaflet(countryMap)                                                     %>%
+        leaflet(countryMap3)                                                     %>%
           setView(-96, 37.8, 4)                                                %>%
           addTiles()                                                           %>%
           addPolygons(stroke           = FALSE,
@@ -94,8 +64,8 @@ function(input, output) {
                       dashArray        = "3",
                       weight           = 2,
                       color            = "white",
-                      fillColor        = ~pal(geoOverdoseStateHeatMaps2021$DataValue),
-                      label            = ~paste0(NAME, ":", formatC(geoOverdoseStateHeatMaps2021$DataValue)),
+                      fillColor        = ~pal(countryMap3$DataValue),
+                      label            = ~paste0(NAME, ":", formatC(countryMap3$DataValue)),
                       highlightOptions = highlightOptions(color       = "white",
                                                           fillOpacity  = 2,
                                                           bringToFront = TRUE)) %>%
