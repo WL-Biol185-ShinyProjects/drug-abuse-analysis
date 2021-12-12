@@ -39,7 +39,7 @@ BigPharmaPerformance <-
                              plotOutput("myDollarGraph")),
                     tabPanel("Monthly Closing Price (in % change)",
                              selectInput(
-                               inputId = "conm",
+                               inputId = "conm_pct",
                                label = "Select one or more Pharmaceutical Distributors or Producers:",
                                choices = unique(BigPharmaStockData$conm),
                                selected = 'SPDR S&P 500 ETF TRUST',

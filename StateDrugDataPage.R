@@ -20,7 +20,6 @@ StateDrugData <-
           multiple = FALSE)),
       mainPanel(
             width = NULL,
-       #     "Overdoses by Specific Drug Type from January 2020-2021",
             leafletOutput("OverdoseSpecificMap"),
             "You can scroll over each state to view the total number of drug overdose deaths for that state during the 12 month period ending in January 2021.
             Provisional overdose counts sourced from CDC's Vital Statistics Rapid Release program."))

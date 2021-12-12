@@ -146,7 +146,7 @@ function(input, output) {
     output$myPercentGraph <- renderPlot(
       {
         BigPharmaStockData %>%
-          filter(conm %in% input$conm) %>%
+          filter(conm %in% input$conm_pct) %>%
           ggplot(aes(x = ymd(datadate), y = pct_change, color = conm, group = conm)) +
           geom_line() +
           geom_point(aes(color = conm)) +
