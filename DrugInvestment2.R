@@ -9,17 +9,6 @@ library("readxl")
 geo <- readOGR("states.geo.json")
 geoIPC <- read.csv("geoIPC.csv")
 
-<<<<<<< HEAD
-#getting to the point to throw into Leaflet
-InvestmentStatesText <- 
-  fluidRow(
-    box(
-      titlePanel("Timeline of State Investment in Drugs"),
-      "The Growth of Statewide Investment in Drugs in states per capita from 1991 to 2014",
-      width = 12,
-      leafletOutput("InvestmentOvertime"),
-      sliderInput(inputId = "yearsforinvestment", label = "years", min(geoIPC$years), max(geoIPC$years), value = min(geoIPC$years), step = TRUE, animate = TRUE, sep = NULL)
-=======
 #Organizing Investment States to throw into the UI & Server
 InvestmentStates <- 
   fluidPage( titlePanel("State Investment in Prescription Drugs"),
@@ -52,7 +41,6 @@ InvestmentStates <-
                     background = "blue",
                    "The maps were meant to show how the rise in state funded investments in prescription drugs over the past two plus decades correlates with large amounts of drug overdose deaths per capita. This tends to be true for states like West Virginia, Ohio, Kentucky, Pennsylvania and Tennessee."
               )  
->>>>>>> 7c62c02795caec3bf7cfc31aa76d9c9f1de045c3
     )
     ))
 

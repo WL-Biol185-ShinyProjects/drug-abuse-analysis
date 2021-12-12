@@ -43,7 +43,7 @@ dashboardPage(
   dashboardBody(
     tabItems(
       tabItem(tabName = "Home", homepagetext),
-      tabItem(tabName = "PrescriptionDrugInvestment", InvestmentStatesText),
+      tabItem(tabName = "PrescriptionDrugInvestment", InvestmentStates),
       tabItem(tabName = "States", StateDrugData),
       tabItem(tabName = "BigPharmaPerformance", BigPharmaPerformanceText),
       tabItem(tabName = "About", AboutPageText)
