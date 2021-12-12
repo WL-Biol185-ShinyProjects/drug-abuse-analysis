@@ -8,6 +8,8 @@ BigPharmaStockData <- read.csv("BigPharmaStockData.csv")
 
 # Set closing monthly closing price data as numeric vector
 BigPharmaStockData$prccm <- as.numeric(as.character( BigPharmaStockData$prccm ))
+BigPharmaStockData <- BigPharmaStockData %>%
+  arrange(conm)
 
 # Organizing Big Pharma Stock Data to throw into the UI & Server
 BigPharmaPerformance <-

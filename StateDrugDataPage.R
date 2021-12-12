@@ -4,6 +4,8 @@ library(markdown)
 
 # Read in 2021 provisional overdose data from CDC
 geoOverdoseStateHeatMaps2021 <- read.csv("geoOverdoseStateHeatMaps.csv")
+geoOverdoseStateHeatMaps2021 <- geoOverdoseStateHeatMaps2021 %>%
+  arrange(Indicator)
 
 StateDrugData <-
   fluidPage(
