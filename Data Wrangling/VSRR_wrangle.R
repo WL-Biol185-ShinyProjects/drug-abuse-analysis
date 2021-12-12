@@ -6,7 +6,7 @@ library(tidyverse)
 
 
 #opens the files and puts them into a data frame
-overdose_df <- read_csv("~/drug-abuse-analysis/VSRR_Provisional_Drug_Overdose_Death_Counts.csv")
+overdose_df <- read_csv("~/drug-abuse-analysis/Data Wrangling/VSRR_Provisional_Drug_Overdose_Death_Counts.csv")
 
 #renames column names to remove space from them
 overdose_df <- overdose_df %>%
@@ -32,6 +32,8 @@ overdose_df$DataValue <- as.numeric(as.character( overdose_df$DataValue ))
 overdose_df <- overdose_df %>%
   select('StateName','Year','Month','Indicator', 'DataValue')
 
+write.csv(overdose_df, file = 'overdose_heatmap.csv')
+
 #Spread function to turn Indicators of drug names into columns
 overdose_df <- overdose_df %>%
   spread(key=Indicator, value='DataValue')
@@ -48,20 +50,22 @@ colnames(overdose_df)[4:13] <- c("Cocaine",
                                  "PsychostimulantsWithAbusePotnetial", 
                                  "SyntheticOpioids_exclMethadone")
 
-#Replaces NA values with zero
-overdose_df[is.na(overdose_df)] <- 0
-
 #Reorders columns to put drug overdose death column towards left of data frame
 overdose_df <- overdose_df[, c(1, 2, 3, 10, 4, 5, 6, 7, 8, 9, 11, 12, 13)]
 
+#Replaces NA values with zero to allow for indicator variable of specific drug type counts
+overdose_specific <- overdose_df
+
+overdose_specific[is.na(overdose_specific)] <- 0
+
 #Gets the total overdose deaths and the drug that caused in for the whole country for every year (Dr. Whitworth showed me this method), now used as indicator for specific drug identified
-overdose_df$TotalKnownDeath <- sapply(1:nrow(overdose_df), function(row) { sum (overdose_df[row, 5:13])})
-overdose_df$TotalKnownDeath <- ifelse(overdose_df$TotalKnownDeath>0, 1, 0)
+overdose_specific$TotalKnownDeath <- sapply(1:nrow(overdose_specific), function(row) { sum (overdose_specific[row, 5:13])})
+overdose_specific$TotalKnownDeath <- ifelse(overdose_specific$TotalKnownDeath>0, 1, 0)
 
 #Filter dataframe for values of TotalDeath that do not equal zero, this gives data frame with drug use specified
 #Also creates a general data frame with all states/months regeardless of specificty
-overdose_specific <- overdose_df %>%
-  filter(TotalKnownDeath != 0)
+overdose_specific <- overdose_specific %>%
+  filter(TotalKnownDeath == 1)
 
 overdose_all <- overdose_df
 
@@ -69,5 +73,10 @@ overdose_all <- overdose_df
 write.csv(overdose_all, file = 'overdose_all.csv')
 write.csv(overdose_specific, file = 'overdose_specific.csv')
 
-#Going forward: decide on which month to use for a given state in a given year and finish creating totalDeath column based on sapply function
+#Function to count when specific drug breakdown data would work best
+  #Decided on January 2021 due to there being 43 states with data by drug category for this period, other time periods had less state data available
+overdose_count <- overdose_specific %>%
+  filter(Year == 2021) %>%
+  filter(Month == 'January')
+length(unique(overdose_count$StateName))
 

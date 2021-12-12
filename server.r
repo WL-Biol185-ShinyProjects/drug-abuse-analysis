@@ -45,6 +45,67 @@ function(input, output) {
      ))
     })
 
+    #2021 leaflet map for specific drug overdose map on national drug abuse tab
+    # output$OverdoseSpecificMap <- renderLeaflet({
+    #   geoOverdoseStateMaps2021 <- read_csv("geoOverdoseStateMaps.csv") %>%
+    #     filter(colnames[9:18] %in% input$colnames_od)
+    #   countryMap <- rgdal::readOGR("states.geo.json")
+    #   countryMap@data <- left_join(countryMap@data, 
+    #                                geoOverdoseStateMaps2021, 
+    #                                by = c("NAME" = "NAME"))
+    #   
+    #   map <- leaflet(countryMap) %>%
+    #     setView(-96, 37.8, 4)
+    #   labels <- sprintf(
+    #     "<strong>%s<strong><br>Number of Drug Overdose Deaths: %s",
+    #     countryMap@data$NAME, 
+    #     countryMap@data$NumberOfDrugOverdoseDeaths 
+    #   ) %>% lapply(HTML)
+    #   
+    #   map %>% addPolygons(
+    #     weight = 2,
+    #     opacity = 1,
+    #     fillColor = "lightblue",
+    #     dashArray = "1",
+    #     color = "black",
+    #     fillOpacity = 0.7,
+    #     label = labels,
+    #     highlight = highlightOptions(
+    #       weight = 3,
+    #       color = "black",
+    #       dashArray = "",
+    #       fillOpacity = 0.7,
+    #       bringToFront = TRUE
+    #     ))
+    # })
+    
+    output$OverdoseSpecificMap  <- renderLeaflet({
+      geoOverdoseStateHeatMaps2021 <- read_csv("geoOverdoseStateHeatMaps.csv") %>%
+           filter(Indicator %in% input$Indicator)
+      countryMap <- rgdal::readOGR("states.geo.json")
+        pal <- colorNumeric("YlOrRd", NULL)
+        leaflet(countryMap)                                                     %>%
+          setView(-96, 37.8, 4)                                                %>%
+          addTiles()                                                           %>%
+          addPolygons(stroke           = FALSE,
+                      smoothFactor     = 0.3,
+                      fillOpacity      = 0.7,
+                      opacity          = 1,
+                      dashArray        = "3",
+                      weight           = 2,
+                      color            = "white",
+                      fillColor        = ~pal(geoOverdoseStateHeatMaps2021$DataValue),
+                      label            = ~paste0(NAME, ":", formatC(geoOverdoseStateHeatMaps2021$DataValue)),
+                      highlightOptions = highlightOptions(color       = "white",
+                                                          fillOpacity  = 2,
+                                                          bringToFront = TRUE)) %>%
+          addLegend(position  = "bottomright",
+                    pal       = pal, 
+                    values    = ~(geoOverdoseStateHeatMaps2021$DataValue), 
+                    opacity   = 0.8, 
+                    title     = "Number of Deaths")
+      }
+    )
     #Animated map for Prescription Drug Investment page 
     output$InvestmentOvertime <- renderLeaflet({
       FilteredStateData <- filter(geoIPC, years == input$yearsforinvestment)

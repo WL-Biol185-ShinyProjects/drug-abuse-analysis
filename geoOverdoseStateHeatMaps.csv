@@ -1,0 +1,431 @@
+GEO_ID,STATE,NAME,LSAD,CENSUSAREA,X,Year,Month,Indicator,DataValue
+0400000US23,23,Maine,,30842.923,12941,2021,January,"Natural & semi-synthetic opioids, incl. methadone (T40.2, T40.3)",97
+0400000US23,23,Maine,,30842.923,12942,2021,January,"Natural, semi-synthetic, & synthetic opioids, incl. methadone (T40.2-T40.4)",424
+0400000US23,23,Maine,,30842.923,12943,2021,January,"Synthetic opioids, excl. methadone (T40.4)",375
+0400000US23,23,Maine,,30842.923,12944,2021,January,Methadone (T40.3),30
+0400000US23,23,Maine,,30842.923,12945,2021,January,Cocaine (T40.5),116
+0400000US23,23,Maine,,30842.923,12946,2021,January,Heroin (T40.1),47
+0400000US23,23,Maine,,30842.923,12947,2021,January,Number of Drug Overdose Deaths,502
+0400000US23,23,Maine,,30842.923,12948,2021,January,Psychostimulants with abuse potential (T43.6),134
+0400000US23,23,Maine,,30842.923,12949,2021,January,"Opioids (T40.0-T40.4,T40.6)",430
+0400000US23,23,Maine,,30842.923,12950,2021,January,Natural & semi-synthetic opioids (T40.2),73
+0400000US25,25,Massachusetts,,7800.058,11461,2021,January,"Natural & semi-synthetic opioids, incl. methadone (T40.2, T40.3)",359
+0400000US25,25,Massachusetts,,7800.058,11462,2021,January,"Natural, semi-synthetic, & synthetic opioids, incl. methadone (T40.2-T40.4)",2074
+0400000US25,25,Massachusetts,,7800.058,11463,2021,January,"Synthetic opioids, excl. methadone (T40.4)",1969
+0400000US25,25,Massachusetts,,7800.058,11464,2021,January,Methadone (T40.3),118
+0400000US25,25,Massachusetts,,7800.058,11465,2021,January,Cocaine (T40.5),933
+0400000US25,25,Massachusetts,,7800.058,11466,2021,January,Heroin (T40.1),214
+0400000US25,25,Massachusetts,,7800.058,11467,2021,January,Number of Drug Overdose Deaths,2330
+0400000US25,25,Massachusetts,,7800.058,11468,2021,January,Psychostimulants with abuse potential (T43.6),169
+0400000US25,25,Massachusetts,,7800.058,11469,2021,January,"Opioids (T40.0-T40.4,T40.6)",2088
+0400000US25,25,Massachusetts,,7800.058,11470,2021,January,Natural & semi-synthetic opioids (T40.2),255
+0400000US26,26,Michigan,,56538.901,13681,2021,January,"Natural & semi-synthetic opioids, incl. methadone (T40.2, T40.3)",490
+0400000US26,26,Michigan,,56538.901,13682,2021,January,"Natural, semi-synthetic, & synthetic opioids, incl. methadone (T40.2-T40.4)",2195
+0400000US26,26,Michigan,,56538.901,13683,2021,January,"Synthetic opioids, excl. methadone (T40.4)",1987
+0400000US26,26,Michigan,,56538.901,13684,2021,January,Methadone (T40.3),123
+0400000US26,26,Michigan,,56538.901,13685,2021,January,Cocaine (T40.5),693
+0400000US26,26,Michigan,,56538.901,13686,2021,January,Heroin (T40.1),442
+0400000US26,26,Michigan,,56538.901,13687,2021,January,Number of Drug Overdose Deaths,2806
+0400000US26,26,Michigan,,56538.901,13688,2021,January,Psychostimulants with abuse potential (T43.6),400
+0400000US26,26,Michigan,,56538.901,13689,2021,January,"Opioids (T40.0-T40.4,T40.6)",2239
+0400000US26,26,Michigan,,56538.901,13690,2021,January,Natural & semi-synthetic opioids (T40.2),382
+0400000US30,30,Montana,,145545.801,15975,2021,January,"Natural & semi-synthetic opioids, incl. methadone (T40.2, T40.3)",39
+0400000US30,30,Montana,,145545.801,15976,2021,January,"Natural, semi-synthetic, & synthetic opioids, incl. methadone (T40.2-T40.4)",64
+0400000US30,30,Montana,,145545.801,15977,2021,January,"Synthetic opioids, excl. methadone (T40.4)",31
+0400000US30,30,Montana,,145545.801,15978,2021,January,Methadone (T40.3),NA
+0400000US30,30,Montana,,145545.801,15979,2021,January,Cocaine (T40.5),NA
+0400000US30,30,Montana,,145545.801,15980,2021,January,Heroin (T40.1),32
+0400000US30,30,Montana,,145545.801,15981,2021,January,Number of Drug Overdose Deaths,164
+0400000US30,30,Montana,,145545.801,15982,2021,January,Psychostimulants with abuse potential (T43.6),71
+0400000US30,30,Montana,,145545.801,15983,2021,January,"Opioids (T40.0-T40.4,T40.6)",90
+0400000US30,30,Montana,,145545.801,15984,2021,January,Natural & semi-synthetic opioids (T40.2),34
+0400000US32,32,Nevada,,109781.18,19823,2021,January,"Natural & semi-synthetic opioids, incl. methadone (T40.2, T40.3)",267
+0400000US32,32,Nevada,,109781.18,19824,2021,January,"Natural, semi-synthetic, & synthetic opioids, incl. methadone (T40.2-T40.4)",497
+0400000US32,32,Nevada,,109781.18,19825,2021,January,"Synthetic opioids, excl. methadone (T40.4)",310
+0400000US32,32,Nevada,,109781.18,19826,2021,January,Methadone (T40.3),30
+0400000US32,32,Nevada,,109781.18,19827,2021,January,Cocaine (T40.5),113
+0400000US32,32,Nevada,,109781.18,19828,2021,January,Heroin (T40.1),149
+0400000US32,32,Nevada,,109781.18,19829,2021,January,Number of Drug Overdose Deaths,941
+0400000US32,32,Nevada,,109781.18,19830,2021,January,Psychostimulants with abuse potential (T43.6),446
+0400000US32,32,Nevada,,109781.18,19831,2021,January,"Opioids (T40.0-T40.4,T40.6)",613
+0400000US32,32,Nevada,,109781.18,19832,2021,January,Natural & semi-synthetic opioids (T40.2),243
+0400000US34,34,New Jersey,,7354.22,18343,2021,January,"Natural & semi-synthetic opioids, incl. methadone (T40.2, T40.3)",456
+0400000US34,34,New Jersey,,7354.22,18344,2021,January,"Natural, semi-synthetic, & synthetic opioids, incl. methadone (T40.2-T40.4)",2492
+0400000US34,34,New Jersey,,7354.22,18345,2021,January,"Synthetic opioids, excl. methadone (T40.4)",2327
+0400000US34,34,New Jersey,,7354.22,18346,2021,January,Methadone (T40.3),135
+0400000US34,34,New Jersey,,7354.22,18347,2021,January,Cocaine (T40.5),842
+0400000US34,34,New Jersey,,7354.22,18348,2021,January,Heroin (T40.1),655
+0400000US34,34,New Jersey,,7354.22,18349,2021,January,Number of Drug Overdose Deaths,2814
+0400000US34,34,New Jersey,,7354.22,18350,2021,January,Psychostimulants with abuse potential (T43.6),269
+0400000US34,34,New Jersey,,7354.22,18351,2021,January,"Opioids (T40.0-T40.4,T40.6)",2533
+0400000US34,34,New Jersey,,7354.22,18352,2021,January,Natural & semi-synthetic opioids (T40.2),336
+0400000US36,36,New York,,47126.399,20563,2021,January,"Natural & semi-synthetic opioids, incl. methadone (T40.2, T40.3)",618
+0400000US36,36,New York,,47126.399,20564,2021,January,"Natural, semi-synthetic, & synthetic opioids, incl. methadone (T40.2-T40.4)",2438
+0400000US36,36,New York,,47126.399,20565,2021,January,"Synthetic opioids, excl. methadone (T40.4)",2204
+0400000US36,36,New York,,47126.399,20566,2021,January,Methadone (T40.3),159
+0400000US36,36,New York,,47126.399,20567,2021,January,Cocaine (T40.5),956
+0400000US36,36,New York,,47126.399,20568,2021,January,Heroin (T40.1),526
+0400000US36,36,New York,,47126.399,20569,2021,January,Number of Drug Overdose Deaths,2926
+0400000US36,36,New York,,47126.399,20570,2021,January,Psychostimulants with abuse potential (T43.6),286
+0400000US36,36,New York,,47126.399,20571,2021,January,"Opioids (T40.0-T40.4,T40.6)",2500
+0400000US36,36,New York,,47126.399,20572,2021,January,Natural & semi-synthetic opioids (T40.2),487
+0400000US37,37,North Carolina,,48617.905,16715,2021,January,"Natural & semi-synthetic opioids, incl. methadone (T40.2, T40.3)",455
+0400000US37,37,North Carolina,,48617.905,16716,2021,January,"Natural, semi-synthetic, & synthetic opioids, incl. methadone (T40.2-T40.4)",2550
+0400000US37,37,North Carolina,,48617.905,16717,2021,January,"Synthetic opioids, excl. methadone (T40.4)",2324
+0400000US37,37,North Carolina,,48617.905,16718,2021,January,Methadone (T40.3),102
+0400000US37,37,North Carolina,,48617.905,16719,2021,January,Cocaine (T40.5),996
+0400000US37,37,North Carolina,,48617.905,16720,2021,January,Heroin (T40.1),500
+0400000US37,37,North Carolina,,48617.905,16721,2021,January,Number of Drug Overdose Deaths,3194
+0400000US37,37,North Carolina,,48617.905,16722,2021,January,Psychostimulants with abuse potential (T43.6),626
+0400000US37,37,North Carolina,,48617.905,16723,2021,January,"Opioids (T40.0-T40.4,T40.6)",2671
+0400000US37,37,North Carolina,,48617.905,16724,2021,January,Natural & semi-synthetic opioids (T40.2),364
+0400000US39,39,Ohio,,40860.694,21303,2021,January,"Natural & semi-synthetic opioids, incl. methadone (T40.2, T40.3)",520
+0400000US39,39,Ohio,,40860.694,21304,2021,January,"Natural, semi-synthetic, & synthetic opioids, incl. methadone (T40.2-T40.4)",4410
+0400000US39,39,Ohio,,40860.694,21305,2021,January,"Synthetic opioids, excl. methadone (T40.4)",4215
+0400000US39,39,Ohio,,40860.694,21306,2021,January,Methadone (T40.3),88
+0400000US39,39,Ohio,,40860.694,21307,2021,January,Cocaine (T40.5),1251
+0400000US39,39,Ohio,,40860.694,21308,2021,January,Heroin (T40.1),286
+0400000US39,39,Ohio,,40860.694,21309,2021,January,Number of Drug Overdose Deaths,5315
+0400000US39,39,Ohio,,40860.694,21310,2021,January,Psychostimulants with abuse potential (T43.6),1096
+0400000US39,39,Ohio,,40860.694,21311,2021,January,"Opioids (T40.0-T40.4,T40.6)",4487
+0400000US39,39,Ohio,,40860.694,21312,2021,January,Natural & semi-synthetic opioids (T40.2),442
+0400000US42,42,Pennsylvania,,44742.703,22866,2021,January,Number of Drug Overdose Deaths,5222
+0400000US44,44,Rhode Island,,1033.814,23597,2021,January,"Natural & semi-synthetic opioids, incl. methadone (T40.2, T40.3)",88
+0400000US44,44,Rhode Island,,1033.814,23598,2021,January,"Natural, semi-synthetic, & synthetic opioids, incl. methadone (T40.2-T40.4)",332
+0400000US44,44,Rhode Island,,1033.814,23599,2021,January,"Synthetic opioids, excl. methadone (T40.4)",295
+0400000US44,44,Rhode Island,,1033.814,23600,2021,January,Methadone (T40.3),50
+0400000US44,44,Rhode Island,,1033.814,23601,2021,January,Cocaine (T40.5),186
+0400000US44,44,Rhode Island,,1033.814,23602,2021,January,Heroin (T40.1),NA
+0400000US44,44,Rhode Island,,1033.814,23603,2021,January,Number of Drug Overdose Deaths,401
+0400000US44,44,Rhode Island,,1033.814,23604,2021,January,Psychostimulants with abuse potential (T43.6),35
+0400000US44,44,Rhode Island,,1033.814,23605,2021,January,"Opioids (T40.0-T40.4,T40.6)",334
+0400000US44,44,Rhode Island,,1033.814,23606,2021,January,Natural & semi-synthetic opioids (T40.2),42
+0400000US47,47,Tennessee,,41234.896,25817,2021,January,"Natural & semi-synthetic opioids, incl. methadone (T40.2, T40.3)",619
+0400000US47,47,Tennessee,,41234.896,25818,2021,January,"Natural, semi-synthetic, & synthetic opioids, incl. methadone (T40.2-T40.4)",2460
+0400000US47,47,Tennessee,,41234.896,25819,2021,January,"Synthetic opioids, excl. methadone (T40.4)",2231
+0400000US47,47,Tennessee,,41234.896,25820,2021,January,Methadone (T40.3),49
+0400000US47,47,Tennessee,,41234.896,25821,2021,January,Cocaine (T40.5),456
+0400000US47,47,Tennessee,,41234.896,25822,2021,January,Heroin (T40.1),328
+0400000US47,47,Tennessee,,41234.896,25823,2021,January,Number of Drug Overdose Deaths,3210
+0400000US47,47,Tennessee,,41234.896,25824,2021,January,Psychostimulants with abuse potential (T43.6),1080
+0400000US47,47,Tennessee,,41234.896,25825,2021,January,"Opioids (T40.0-T40.4,T40.6)",2536
+0400000US47,47,Tennessee,,41234.896,25826,2021,January,Natural & semi-synthetic opioids (T40.2),578
+0400000US48,48,Texas,,261231.711,26557,2021,January,"Natural & semi-synthetic opioids, incl. methadone (T40.2, T40.3)",648
+0400000US48,48,Texas,,261231.711,26558,2021,January,"Natural, semi-synthetic, & synthetic opioids, incl. methadone (T40.2-T40.4)",1528
+0400000US48,48,Texas,,261231.711,26559,2021,January,"Synthetic opioids, excl. methadone (T40.4)",1082
+0400000US48,48,Texas,,261231.711,26560,2021,January,Methadone (T40.3),123
+0400000US48,48,Texas,,261231.711,26561,2021,January,Cocaine (T40.5),1040
+0400000US48,48,Texas,,261231.711,26562,2021,January,Heroin (T40.1),781
+0400000US48,48,Texas,,261231.711,26563,2021,January,Number of Drug Overdose Deaths,4250
+0400000US48,48,Texas,,261231.711,26564,2021,January,Psychostimulants with abuse potential (T43.6),1561
+0400000US48,48,Texas,,261231.711,26565,2021,January,"Opioids (T40.0-T40.4,T40.6)",2158
+0400000US48,48,Texas,,261231.711,26566,2021,January,Natural & semi-synthetic opioids (T40.2),540
+0400000US49,49,Utah,,82169.62,27297,2021,January,"Natural & semi-synthetic opioids, incl. methadone (T40.2, T40.3)",232
+0400000US49,49,Utah,,82169.62,27298,2021,January,"Natural, semi-synthetic, & synthetic opioids, incl. methadone (T40.2-T40.4)",333
+0400000US49,49,Utah,,82169.62,27299,2021,January,"Synthetic opioids, excl. methadone (T40.4)",156
+0400000US49,49,Utah,,82169.62,27300,2021,January,Methadone (T40.3),27
+0400000US49,49,Utah,,82169.62,27301,2021,January,Cocaine (T40.5),41
+0400000US49,49,Utah,,82169.62,27302,2021,January,Heroin (T40.1),141
+0400000US49,49,Utah,,82169.62,27303,2021,January,Number of Drug Overdose Deaths,634
+0400000US49,49,Utah,,82169.62,27304,2021,January,Psychostimulants with abuse potential (T43.6),241
+0400000US49,49,Utah,,82169.62,27305,2021,January,"Opioids (T40.0-T40.4,T40.6)",442
+0400000US49,49,Utah,,82169.62,27306,2021,January,Natural & semi-synthetic opioids (T40.2),217
+0400000US53,53,Washington,,66455.521,29517,2021,January,"Natural & semi-synthetic opioids, incl. methadone (T40.2, T40.3)",334
+0400000US53,53,Washington,,66455.521,29518,2021,January,"Natural, semi-synthetic, & synthetic opioids, incl. methadone (T40.2-T40.4)",919
+0400000US53,53,Washington,,66455.521,29519,2021,January,"Synthetic opioids, excl. methadone (T40.4)",694
+0400000US53,53,Washington,,66455.521,29520,2021,January,Methadone (T40.3),117
+0400000US53,53,Washington,,66455.521,29521,2021,January,Cocaine (T40.5),181
+0400000US53,53,Washington,,66455.521,29522,2021,January,Heroin (T40.1),391
+0400000US53,53,Washington,,66455.521,29523,2021,January,Number of Drug Overdose Deaths,1767
+0400000US53,53,Washington,,66455.521,29524,2021,January,Psychostimulants with abuse potential (T43.6),760
+0400000US53,53,Washington,,66455.521,29525,2021,January,"Opioids (T40.0-T40.4,T40.6)",1223
+0400000US53,53,Washington,,66455.521,29526,2021,January,Natural & semi-synthetic opioids (T40.2),232
+0400000US55,55,Wisconsin,,54157.805,30257,2021,January,"Natural & semi-synthetic opioids, incl. methadone (T40.2, T40.3)",340
+0400000US55,55,Wisconsin,,54157.805,30258,2021,January,"Natural, semi-synthetic, & synthetic opioids, incl. methadone (T40.2-T40.4)",1229
+0400000US55,55,Wisconsin,,54157.805,30259,2021,January,"Synthetic opioids, excl. methadone (T40.4)",1100
+0400000US55,55,Wisconsin,,54157.805,30260,2021,January,Methadone (T40.3),70
+0400000US55,55,Wisconsin,,54157.805,30261,2021,January,Cocaine (T40.5),396
+0400000US55,55,Wisconsin,,54157.805,30262,2021,January,Heroin (T40.1),256
+0400000US55,55,Wisconsin,,54157.805,30263,2021,January,Number of Drug Overdose Deaths,1541
+0400000US55,55,Wisconsin,,54157.805,30264,2021,January,Psychostimulants with abuse potential (T43.6),278
+0400000US55,55,Wisconsin,,54157.805,30265,2021,January,"Opioids (T40.0-T40.4,T40.6)",1268
+0400000US55,55,Wisconsin,,54157.805,30266,2021,January,Natural & semi-synthetic opioids (T40.2),281
+0400000US72,72,Puerto Rico,,3423.775,NA,NA,NA,NA,NA
+0400000US24,24,Maryland,,9707.241,12201,2021,January,"Natural & semi-synthetic opioids, incl. methadone (T40.2, T40.3)",622
+0400000US24,24,Maryland,,9707.241,12202,2021,January,"Natural, semi-synthetic, & synthetic opioids, incl. methadone (T40.2-T40.4)",2562
+0400000US24,24,Maryland,,9707.241,12203,2021,January,"Synthetic opioids, excl. methadone (T40.4)",2393
+0400000US24,24,Maryland,,9707.241,12204,2021,January,Methadone (T40.3),280
+0400000US24,24,Maryland,,9707.241,12205,2021,January,Cocaine (T40.5),766
+0400000US24,24,Maryland,,9707.241,12206,2021,January,Heroin (T40.1),110
+0400000US24,24,Maryland,,9707.241,12207,2021,January,Number of Drug Overdose Deaths,2831
+0400000US24,24,Maryland,,9707.241,12208,2021,January,Psychostimulants with abuse potential (T43.6),122
+0400000US24,24,Maryland,,9707.241,12209,2021,January,"Opioids (T40.0-T40.4,T40.6)",2573
+0400000US24,24,Maryland,,9707.241,12210,2021,January,Natural & semi-synthetic opioids (T40.2),379
+0400000US01,01,Alabama,,50645.326,814,2021,January,Number of Drug Overdose Deaths,1026
+0400000US02,02,Alaska,,570640.95,731,2021,January,"Natural & semi-synthetic opioids, incl. methadone (T40.2, T40.3)",42
+0400000US02,02,Alaska,,570640.95,732,2021,January,"Natural, semi-synthetic, & synthetic opioids, incl. methadone (T40.2-T40.4)",93
+0400000US02,02,Alaska,,570640.95,733,2021,January,"Synthetic opioids, excl. methadone (T40.4)",66
+0400000US02,02,Alaska,,570640.95,734,2021,January,Methadone (T40.3),NA
+0400000US02,02,Alaska,,570640.95,735,2021,January,Cocaine (T40.5),20
+0400000US02,02,Alaska,,570640.95,736,2021,January,Heroin (T40.1),33
+0400000US02,02,Alaska,,570640.95,737,2021,January,Number of Drug Overdose Deaths,143
+0400000US02,02,Alaska,,570640.95,738,2021,January,Psychostimulants with abuse potential (T43.6),65
+0400000US02,02,Alaska,,570640.95,739,2021,January,"Opioids (T40.0-T40.4,T40.6)",106
+0400000US02,02,Alaska,,570640.95,740,2021,January,Natural & semi-synthetic opioids (T40.2),35
+0400000US04,04,Arizona,,113594.084,1619,2021,January,"Natural & semi-synthetic opioids, incl. methadone (T40.2, T40.3)",392
+0400000US04,04,Arizona,,113594.084,1620,2021,January,"Natural, semi-synthetic, & synthetic opioids, incl. methadone (T40.2-T40.4)",1776
+0400000US04,04,Arizona,,113594.084,1621,2021,January,"Synthetic opioids, excl. methadone (T40.4)",1548
+0400000US04,04,Arizona,,113594.084,1622,2021,January,Methadone (T40.3),74
+0400000US04,04,Arizona,,113594.084,1623,2021,January,Cocaine (T40.5),185
+0400000US04,04,Arizona,,113594.084,1624,2021,January,Heroin (T40.1),216
+0400000US04,04,Arizona,,113594.084,1625,2021,January,Number of Drug Overdose Deaths,2670
+0400000US04,04,Arizona,,113594.084,1626,2021,January,Psychostimulants with abuse potential (T43.6),1092
+0400000US04,04,Arizona,,113594.084,1627,2021,January,"Opioids (T40.0-T40.4,T40.6)",1952
+0400000US04,04,Arizona,,113594.084,1628,2021,January,Natural & semi-synthetic opioids (T40.2),327
+0400000US05,05,Arkansas,,52035.477,888,2021,January,Number of Drug Overdose Deaths,514
+0400000US06,06,California,,155779.22,2359,2021,January,"Natural & semi-synthetic opioids, incl. methadone (T40.2, T40.3)",1233
+0400000US06,06,California,,155779.22,2360,2021,January,"Natural, semi-synthetic, & synthetic opioids, incl. methadone (T40.2-T40.4)",5227
+0400000US06,06,California,,155779.22,2361,2021,January,"Synthetic opioids, excl. methadone (T40.4)",4434
+0400000US06,06,California,,155779.22,2362,2021,January,Methadone (T40.3),255
+0400000US06,06,California,,155779.22,2363,2021,January,Cocaine (T40.5),1224
+0400000US06,06,California,,155779.22,2364,2021,January,Heroin (T40.1),1024
+0400000US06,06,California,,155779.22,2365,2021,January,Number of Drug Overdose Deaths,9502
+0400000US06,06,California,,155779.22,2366,2021,January,Psychostimulants with abuse potential (T43.6),4852
+0400000US06,06,California,,155779.22,2367,2021,January,"Opioids (T40.0-T40.4,T40.6)",5937
+0400000US06,06,California,,155779.22,2368,2021,January,Natural & semi-synthetic opioids (T40.2),1016
+0400000US08,08,Colorado,,103641.888,3099,2021,January,"Natural & semi-synthetic opioids, incl. methadone (T40.2, T40.3)",342
+0400000US08,08,Colorado,,103641.888,3100,2021,January,"Natural, semi-synthetic, & synthetic opioids, incl. methadone (T40.2-T40.4)",850
+0400000US08,08,Colorado,,103641.888,3101,2021,January,"Synthetic opioids, excl. methadone (T40.4)",623
+0400000US08,08,Colorado,,103641.888,3102,2021,January,Methadone (T40.3),70
+0400000US08,08,Colorado,,103641.888,3103,2021,January,Cocaine (T40.5),233
+0400000US08,08,Colorado,,103641.888,3104,2021,January,Heroin (T40.1),231
+0400000US08,08,Colorado,,103641.888,3105,2021,January,Number of Drug Overdose Deaths,1557
+0400000US08,08,Colorado,,103641.888,3106,2021,January,Psychostimulants with abuse potential (T43.6),567
+0400000US08,08,Colorado,,103641.888,3107,2021,January,"Opioids (T40.0-T40.4,T40.6)",1026
+0400000US08,08,Colorado,,103641.888,3108,2021,January,Natural & semi-synthetic opioids (T40.2),280
+0400000US09,09,Connecticut,,4842.355,3839,2021,January,"Natural & semi-synthetic opioids, incl. methadone (T40.2, T40.3)",309
+0400000US09,09,Connecticut,,4842.355,3840,2021,January,"Natural, semi-synthetic, & synthetic opioids, incl. methadone (T40.2-T40.4)",1250
+0400000US09,09,Connecticut,,4842.355,3841,2021,January,"Synthetic opioids, excl. methadone (T40.4)",1158
+0400000US09,09,Connecticut,,4842.355,3842,2021,January,Methadone (T40.3),112
+0400000US09,09,Connecticut,,4842.355,3843,2021,January,Cocaine (T40.5),427
+0400000US09,09,Connecticut,,4842.355,3844,2021,January,Heroin (T40.1),205
+0400000US09,09,Connecticut,,4842.355,3845,2021,January,Number of Drug Overdose Deaths,1384
+0400000US09,09,Connecticut,,4842.355,3846,2021,January,Psychostimulants with abuse potential (T43.6),95
+0400000US09,09,Connecticut,,4842.355,3847,2021,January,"Opioids (T40.0-T40.4,T40.6)",1263
+0400000US09,09,Connecticut,,4842.355,3848,2021,January,Natural & semi-synthetic opioids (T40.2),216
+0400000US10,10,Delaware,,1948.543,5319,2021,January,"Natural & semi-synthetic opioids, incl. methadone (T40.2, T40.3)",87
+0400000US10,10,Delaware,,1948.543,5320,2021,January,"Natural, semi-synthetic, & synthetic opioids, incl. methadone (T40.2-T40.4)",413
+0400000US10,10,Delaware,,1948.543,5321,2021,January,"Synthetic opioids, excl. methadone (T40.4)",373
+0400000US10,10,Delaware,,1948.543,5322,2021,January,Methadone (T40.3),40
+0400000US10,10,Delaware,,1948.543,5323,2021,January,Cocaine (T40.5),147
+0400000US10,10,Delaware,,1948.543,5324,2021,January,Heroin (T40.1),91
+0400000US10,10,Delaware,,1948.543,5325,2021,January,Number of Drug Overdose Deaths,456
+0400000US10,10,Delaware,,1948.543,5326,2021,January,Psychostimulants with abuse potential (T43.6),54
+0400000US10,10,Delaware,,1948.543,5327,2021,January,"Opioids (T40.0-T40.4,T40.6)",420
+0400000US10,10,Delaware,,1948.543,5328,2021,January,Natural & semi-synthetic opioids (T40.2),51
+0400000US11,11,District of Columbia,,61.048,4579,2021,January,"Natural & semi-synthetic opioids, incl. methadone (T40.2, T40.3)",64
+0400000US11,11,District of Columbia,,61.048,4580,2021,January,"Natural, semi-synthetic, & synthetic opioids, incl. methadone (T40.2-T40.4)",401
+0400000US11,11,District of Columbia,,61.048,4581,2021,January,"Synthetic opioids, excl. methadone (T40.4)",385
+0400000US11,11,District of Columbia,,61.048,4582,2021,January,Methadone (T40.3),33
+0400000US11,11,District of Columbia,,61.048,4583,2021,January,Cocaine (T40.5),182
+0400000US11,11,District of Columbia,,61.048,4584,2021,January,Heroin (T40.1),99
+0400000US11,11,District of Columbia,,61.048,4585,2021,January,Number of Drug Overdose Deaths,513
+0400000US11,11,District of Columbia,,61.048,4586,2021,January,Psychostimulants with abuse potential (T43.6),13
+0400000US11,11,District of Columbia,,61.048,4587,2021,January,"Opioids (T40.0-T40.4,T40.6)",408
+0400000US11,11,District of Columbia,,61.048,4588,2021,January,Natural & semi-synthetic opioids (T40.2),34
+0400000US12,12,Florida,,53624.759,5402,2021,January,Number of Drug Overdose Deaths,7643
+0400000US13,13,Georgia,,57513.485,6133,2021,January,"Natural & semi-synthetic opioids, incl. methadone (T40.2, T40.3)",494
+0400000US13,13,Georgia,,57513.485,6134,2021,January,"Natural, semi-synthetic, & synthetic opioids, incl. methadone (T40.2-T40.4)",1170
+0400000US13,13,Georgia,,57513.485,6135,2021,January,"Synthetic opioids, excl. methadone (T40.4)",904
+0400000US13,13,Georgia,,57513.485,6136,2021,January,Methadone (T40.3),74
+0400000US13,13,Georgia,,57513.485,6137,2021,January,Cocaine (T40.5),340
+0400000US13,13,Georgia,,57513.485,6138,2021,January,Heroin (T40.1),401
+0400000US13,13,Georgia,,57513.485,6139,2021,January,Number of Drug Overdose Deaths,1911
+0400000US13,13,Georgia,,57513.485,6140,2021,January,Psychostimulants with abuse potential (T43.6),607
+0400000US13,13,Georgia,,57513.485,6141,2021,January,"Opioids (T40.0-T40.4,T40.6)",1304
+0400000US13,13,Georgia,,57513.485,6142,2021,January,Natural & semi-synthetic opioids (T40.2),448
+0400000US15,15,Hawaii,,6422.628,6873,2021,January,"Natural & semi-synthetic opioids, incl. methadone (T40.2, T40.3)",32
+0400000US15,15,Hawaii,,6422.628,6874,2021,January,"Natural, semi-synthetic, & synthetic opioids, incl. methadone (T40.2-T40.4)",59
+0400000US15,15,Hawaii,,6422.628,6875,2021,January,"Synthetic opioids, excl. methadone (T40.4)",33
+0400000US15,15,Hawaii,,6422.628,6876,2021,January,Methadone (T40.3),NA
+0400000US15,15,Hawaii,,6422.628,6877,2021,January,Cocaine (T40.5),15
+0400000US15,15,Hawaii,,6422.628,6878,2021,January,Heroin (T40.1),22
+0400000US15,15,Hawaii,,6422.628,6879,2021,January,Number of Drug Overdose Deaths,275
+0400000US15,15,Hawaii,,6422.628,6880,2021,January,Psychostimulants with abuse potential (T43.6),194
+0400000US15,15,Hawaii,,6422.628,6881,2021,January,"Opioids (T40.0-T40.4,T40.6)",74
+0400000US15,15,Hawaii,,6422.628,6882,2021,January,Natural & semi-synthetic opioids (T40.2),29
+0400000US16,16,Idaho,,82643.117,7696,2021,January,Number of Drug Overdose Deaths,284
+0400000US17,17,Illinois,,55518.93,8427,2021,January,"Natural & semi-synthetic opioids, incl. methadone (T40.2, T40.3)",679
+0400000US17,17,Illinois,,55518.93,8428,2021,January,"Natural, semi-synthetic, & synthetic opioids, incl. methadone (T40.2-T40.4)",2796
+0400000US17,17,Illinois,,55518.93,8429,2021,January,"Synthetic opioids, excl. methadone (T40.4)",2486
+0400000US17,17,Illinois,,55518.93,8430,2021,January,Methadone (T40.3),213
+0400000US17,17,Illinois,,55518.93,8431,2021,January,Cocaine (T40.5),1102
+0400000US17,17,Illinois,,55518.93,8432,2021,January,Heroin (T40.1),1043
+0400000US17,17,Illinois,,55518.93,8433,2021,January,Number of Drug Overdose Deaths,3513
+0400000US17,17,Illinois,,55518.93,8434,2021,January,Psychostimulants with abuse potential (T43.6),412
+0400000US17,17,Illinois,,55518.93,8435,2021,January,"Opioids (T40.0-T40.4,T40.6)",2935
+0400000US17,17,Illinois,,55518.93,8436,2021,January,Natural & semi-synthetic opioids (T40.2),501
+0400000US18,18,Indiana,,35826.109,9167,2021,January,"Natural & semi-synthetic opioids, incl. methadone (T40.2, T40.3)",457
+0400000US18,18,Indiana,,35826.109,9168,2021,January,"Natural, semi-synthetic, & synthetic opioids, incl. methadone (T40.2-T40.4)",1799
+0400000US18,18,Indiana,,35826.109,9169,2021,January,"Synthetic opioids, excl. methadone (T40.4)",1636
+0400000US18,18,Indiana,,35826.109,9170,2021,January,Methadone (T40.3),47
+0400000US18,18,Indiana,,35826.109,9171,2021,January,Cocaine (T40.5),299
+0400000US18,18,Indiana,,35826.109,9172,2021,January,Heroin (T40.1),185
+0400000US18,18,Indiana,,35826.109,9173,2021,January,Number of Drug Overdose Deaths,2332
+0400000US18,18,Indiana,,35826.109,9174,2021,January,Psychostimulants with abuse potential (T43.6),730
+0400000US18,18,Indiana,,35826.109,9175,2021,January,"Opioids (T40.0-T40.4,T40.6)",1865
+0400000US18,18,Indiana,,35826.109,9176,2021,January,Natural & semi-synthetic opioids (T40.2),416
+0400000US19,19,Iowa,,55857.13,7613,2021,January,"Natural & semi-synthetic opioids, incl. methadone (T40.2, T40.3)",69
+0400000US19,19,Iowa,,55857.13,7614,2021,January,"Natural, semi-synthetic, & synthetic opioids, incl. methadone (T40.2-T40.4)",212
+0400000US19,19,Iowa,,55857.13,7615,2021,January,"Synthetic opioids, excl. methadone (T40.4)",164
+0400000US19,19,Iowa,,55857.13,7616,2021,January,Methadone (T40.3),13
+0400000US19,19,Iowa,,55857.13,7617,2021,January,Cocaine (T40.5),26
+0400000US19,19,Iowa,,55857.13,7618,2021,January,Heroin (T40.1),53
+0400000US19,19,Iowa,,55857.13,7619,2021,January,Number of Drug Overdose Deaths,428
+0400000US19,19,Iowa,,55857.13,7620,2021,January,Psychostimulants with abuse potential (T43.6),162
+0400000US19,19,Iowa,,55857.13,7621,2021,January,"Opioids (T40.0-T40.4,T40.6)",219
+0400000US19,19,Iowa,,55857.13,7622,2021,January,Natural & semi-synthetic opioids (T40.2),56
+0400000US20,20,Kansas,,81758.717,9907,2021,January,"Natural & semi-synthetic opioids, incl. methadone (T40.2, T40.3)",69
+0400000US20,20,Kansas,,81758.717,9908,2021,January,"Natural, semi-synthetic, & synthetic opioids, incl. methadone (T40.2-T40.4)",220
+0400000US20,20,Kansas,,81758.717,9909,2021,January,"Synthetic opioids, excl. methadone (T40.4)",168
+0400000US20,20,Kansas,,81758.717,9910,2021,January,Methadone (T40.3),NA
+0400000US20,20,Kansas,,81758.717,9911,2021,January,Cocaine (T40.5),37
+0400000US20,20,Kansas,,81758.717,9912,2021,January,Heroin (T40.1),32
+0400000US20,20,Kansas,,81758.717,9913,2021,January,Number of Drug Overdose Deaths,471
+0400000US20,20,Kansas,,81758.717,9914,2021,January,Psychostimulants with abuse potential (T43.6),179
+0400000US20,20,Kansas,,81758.717,9915,2021,January,"Opioids (T40.0-T40.4,T40.6)",255
+0400000US20,20,Kansas,,81758.717,9916,2021,January,Natural & semi-synthetic opioids (T40.2),63
+0400000US21,21,Kentucky,,39486.338,10647,2021,January,"Natural & semi-synthetic opioids, incl. methadone (T40.2, T40.3)",478
+0400000US21,21,Kentucky,,39486.338,10648,2021,January,"Natural, semi-synthetic, & synthetic opioids, incl. methadone (T40.2-T40.4)",1753
+0400000US21,21,Kentucky,,39486.338,10649,2021,January,"Synthetic opioids, excl. methadone (T40.4)",1593
+0400000US21,21,Kentucky,,39486.338,10650,2021,January,Methadone (T40.3),43
+0400000US21,21,Kentucky,,39486.338,10651,2021,January,Cocaine (T40.5),182
+0400000US21,21,Kentucky,,39486.338,10652,2021,January,Heroin (T40.1),111
+0400000US21,21,Kentucky,,39486.338,10653,2021,January,Number of Drug Overdose Deaths,2188
+0400000US21,21,Kentucky,,39486.338,10654,2021,January,Psychostimulants with abuse potential (T43.6),797
+0400000US21,21,Kentucky,,39486.338,10655,2021,January,"Opioids (T40.0-T40.4,T40.6)",1776
+0400000US21,21,Kentucky,,39486.338,10656,2021,January,Natural & semi-synthetic opioids (T40.2),445
+0400000US22,22,Louisiana,,43203.905,10730,2021,January,Number of Drug Overdose Deaths,2018
+0400000US27,27,Minnesota,,79626.743,13764,2021,January,Number of Drug Overdose Deaths,1106
+0400000US28,28,Mississippi,,46923.274,15235,2021,January,"Natural & semi-synthetic opioids, incl. methadone (T40.2, T40.3)",116
+0400000US28,28,Mississippi,,46923.274,15236,2021,January,"Natural, semi-synthetic, & synthetic opioids, incl. methadone (T40.2-T40.4)",345
+0400000US28,28,Mississippi,,46923.274,15237,2021,January,"Synthetic opioids, excl. methadone (T40.4)",288
+0400000US28,28,Mississippi,,46923.274,15238,2021,January,Methadone (T40.3),11
+0400000US28,28,Mississippi,,46923.274,15239,2021,January,Cocaine (T40.5),59
+0400000US28,28,Mississippi,,46923.274,15240,2021,January,Heroin (T40.1),66
+0400000US28,28,Mississippi,,46923.274,15241,2021,January,Number of Drug Overdose Deaths,533
+0400000US28,28,Mississippi,,46923.274,15242,2021,January,Psychostimulants with abuse potential (T43.6),207
+0400000US28,28,Mississippi,,46923.274,15243,2021,January,"Opioids (T40.0-T40.4,T40.6)",378
+0400000US28,28,Mississippi,,46923.274,15244,2021,January,Natural & semi-synthetic opioids (T40.2),109
+0400000US29,29,Missouri,,68741.522,14495,2021,January,"Natural & semi-synthetic opioids, incl. methadone (T40.2, T40.3)",231
+0400000US29,29,Missouri,,68741.522,14496,2021,January,"Natural, semi-synthetic, & synthetic opioids, incl. methadone (T40.2-T40.4)",1385
+0400000US29,29,Missouri,,68741.522,14497,2021,January,"Synthetic opioids, excl. methadone (T40.4)",1262
+0400000US29,29,Missouri,,68741.522,14498,2021,January,Methadone (T40.3),29
+0400000US29,29,Missouri,,68741.522,14499,2021,January,Cocaine (T40.5),209
+0400000US29,29,Missouri,,68741.522,14500,2021,January,Heroin (T40.1),152
+0400000US29,29,Missouri,,68741.522,14501,2021,January,Number of Drug Overdose Deaths,1956
+0400000US29,29,Missouri,,68741.522,14502,2021,January,Psychostimulants with abuse potential (T43.6),583
+0400000US29,29,Missouri,,68741.522,14503,2021,January,"Opioids (T40.0-T40.4,T40.6)",1434
+0400000US29,29,Missouri,,68741.522,14504,2021,January,Natural & semi-synthetic opioids (T40.2),206
+0400000US31,31,Nebraska,,76824.171,16872,2021,January,Number of Drug Overdose Deaths,213
+0400000US33,33,New Hampshire,,8952.651,17603,2021,January,"Natural & semi-synthetic opioids, incl. methadone (T40.2, T40.3)",43
+0400000US33,33,New Hampshire,,8952.651,17604,2021,January,"Natural, semi-synthetic, & synthetic opioids, incl. methadone (T40.2-T40.4)",341
+0400000US33,33,New Hampshire,,8952.651,17605,2021,January,"Synthetic opioids, excl. methadone (T40.4)",321
+0400000US33,33,New Hampshire,,8952.651,17606,2021,January,Methadone (T40.3),18
+0400000US33,33,New Hampshire,,8952.651,17607,2021,January,Cocaine (T40.5),45
+0400000US33,33,New Hampshire,,8952.651,17608,2021,January,Heroin (T40.1),NA
+0400000US33,33,New Hampshire,,8952.651,17609,2021,January,Number of Drug Overdose Deaths,389
+0400000US33,33,New Hampshire,,8952.651,17610,2021,January,Psychostimulants with abuse potential (T43.6),60
+0400000US33,33,New Hampshire,,8952.651,17611,2021,January,"Opioids (T40.0-T40.4,T40.6)",342
+0400000US33,33,New Hampshire,,8952.651,17612,2021,January,Natural & semi-synthetic opioids (T40.2),28
+0400000US35,35,New Mexico,,121298.148,19083,2021,January,"Natural & semi-synthetic opioids, incl. methadone (T40.2, T40.3)",203
+0400000US35,35,New Mexico,,121298.148,19084,2021,January,"Natural, semi-synthetic, & synthetic opioids, incl. methadone (T40.2-T40.4)",446
+0400000US35,35,New Mexico,,121298.148,19085,2021,January,"Synthetic opioids, excl. methadone (T40.4)",331
+0400000US35,35,New Mexico,,121298.148,19086,2021,January,Methadone (T40.3),55
+0400000US35,35,New Mexico,,121298.148,19087,2021,January,Cocaine (T40.5),120
+0400000US35,35,New Mexico,,121298.148,19088,2021,January,Heroin (T40.1),181
+0400000US35,35,New Mexico,,121298.148,19089,2021,January,Number of Drug Overdose Deaths,804
+0400000US35,35,New Mexico,,121298.148,19090,2021,January,Psychostimulants with abuse potential (T43.6),352
+0400000US35,35,New Mexico,,121298.148,19091,2021,January,"Opioids (T40.0-T40.4,T40.6)",531
+0400000US35,35,New Mexico,,121298.148,19092,2021,January,Natural & semi-synthetic opioids (T40.2),158
+0400000US38,38,North Dakota,,69000.798,16798,2021,January,Number of Drug Overdose Deaths,125
+0400000US40,40,Oklahoma,,68594.921,22043,2021,January,"Natural & semi-synthetic opioids, incl. methadone (T40.2, T40.3)",118
+0400000US40,40,Oklahoma,,68594.921,22044,2021,January,"Natural, semi-synthetic, & synthetic opioids, incl. methadone (T40.2-T40.4)",247
+0400000US40,40,Oklahoma,,68594.921,22045,2021,January,"Synthetic opioids, excl. methadone (T40.4)",154
+0400000US40,40,Oklahoma,,68594.921,22046,2021,January,Methadone (T40.3),19
+0400000US40,40,Oklahoma,,68594.921,22047,2021,January,Cocaine (T40.5),56
+0400000US40,40,Oklahoma,,68594.921,22048,2021,January,Heroin (T40.1),81
+0400000US40,40,Oklahoma,,68594.921,22049,2021,January,Number of Drug Overdose Deaths,776
+0400000US40,40,Oklahoma,,68594.921,22050,2021,January,Psychostimulants with abuse potential (T43.6),433
+0400000US40,40,Oklahoma,,68594.921,22051,2021,January,"Opioids (T40.0-T40.4,T40.6)",318
+0400000US40,40,Oklahoma,,68594.921,22052,2021,January,Natural & semi-synthetic opioids (T40.2),101
+0400000US41,41,Oregon,,95988.013,22783,2021,January,"Natural & semi-synthetic opioids, incl. methadone (T40.2, T40.3)",131
+0400000US41,41,Oregon,,95988.013,22784,2021,January,"Natural, semi-synthetic, & synthetic opioids, incl. methadone (T40.2-T40.4)",352
+0400000US41,41,Oregon,,95988.013,22785,2021,January,"Synthetic opioids, excl. methadone (T40.4)",259
+0400000US41,41,Oregon,,95988.013,22786,2021,January,Methadone (T40.3),31
+0400000US41,41,Oregon,,95988.013,22787,2021,January,Cocaine (T40.5),71
+0400000US41,41,Oregon,,95988.013,22788,2021,January,Heroin (T40.1),198
+0400000US41,41,Oregon,,95988.013,22789,2021,January,Number of Drug Overdose Deaths,831
+0400000US41,41,Oregon,,95988.013,22790,2021,January,Psychostimulants with abuse potential (T43.6),385
+0400000US41,41,Oregon,,95988.013,22791,2021,January,"Opioids (T40.0-T40.4,T40.6)",514
+0400000US41,41,Oregon,,95988.013,22792,2021,January,Natural & semi-synthetic opioids (T40.2),109
+0400000US45,45,South Carolina,,30060.696,24337,2021,January,"Natural & semi-synthetic opioids, incl. methadone (T40.2, T40.3)",465
+0400000US45,45,South Carolina,,30060.696,24338,2021,January,"Natural, semi-synthetic, & synthetic opioids, incl. methadone (T40.2-T40.4)",1370
+0400000US45,45,South Carolina,,30060.696,24339,2021,January,"Synthetic opioids, excl. methadone (T40.4)",1177
+0400000US45,45,South Carolina,,30060.696,24340,2021,January,Methadone (T40.3),45
+0400000US45,45,South Carolina,,30060.696,24341,2021,January,Cocaine (T40.5),353
+0400000US45,45,South Carolina,,30060.696,24342,2021,January,Heroin (T40.1),234
+0400000US45,45,South Carolina,,30060.696,24343,2021,January,Number of Drug Overdose Deaths,1771
+0400000US45,45,South Carolina,,30060.696,24344,2021,January,Psychostimulants with abuse potential (T43.6),566
+0400000US45,45,South Carolina,,30060.696,24345,2021,January,"Opioids (T40.0-T40.4,T40.6)",1436
+0400000US45,45,South Carolina,,30060.696,24346,2021,January,Natural & semi-synthetic opioids (T40.2),429
+0400000US46,46,South Dakota,,75811,25077,2021,January,"Natural & semi-synthetic opioids, incl. methadone (T40.2, T40.3)",11
+0400000US46,46,South Dakota,,75811,25078,2021,January,"Natural, semi-synthetic, & synthetic opioids, incl. methadone (T40.2-T40.4)",32
+0400000US46,46,South Dakota,,75811,25079,2021,January,"Synthetic opioids, excl. methadone (T40.4)",25
+0400000US46,46,South Dakota,,75811,25080,2021,January,Methadone (T40.3),NA
+0400000US46,46,South Dakota,,75811,25081,2021,January,Cocaine (T40.5),NA
+0400000US46,46,South Dakota,,75811,25082,2021,January,Heroin (T40.1),NA
+0400000US46,46,South Dakota,,75811,25083,2021,January,Number of Drug Overdose Deaths,76
+0400000US46,46,South Dakota,,75811,25084,2021,January,Psychostimulants with abuse potential (T43.6),32
+0400000US46,46,South Dakota,,75811,25085,2021,January,"Opioids (T40.0-T40.4,T40.6)",35
+0400000US46,46,South Dakota,,75811,25086,2021,January,Natural & semi-synthetic opioids (T40.2),11
+0400000US50,50,Vermont,,9216.657,28777,2021,January,"Natural & semi-synthetic opioids, incl. methadone (T40.2, T40.3)",40
+0400000US50,50,Vermont,,9216.657,28778,2021,January,"Natural, semi-synthetic, & synthetic opioids, incl. methadone (T40.2-T40.4)",155
+0400000US50,50,Vermont,,9216.657,28779,2021,January,"Synthetic opioids, excl. methadone (T40.4)",137
+0400000US50,50,Vermont,,9216.657,28780,2021,January,Methadone (T40.3),13
+0400000US50,50,Vermont,,9216.657,28781,2021,January,Cocaine (T40.5),73
+0400000US50,50,Vermont,,9216.657,28782,2021,January,Heroin (T40.1),39
+0400000US50,50,Vermont,,9216.657,28783,2021,January,Number of Drug Overdose Deaths,191
+0400000US50,50,Vermont,,9216.657,28784,2021,January,Psychostimulants with abuse potential (T43.6),23
+0400000US50,50,Vermont,,9216.657,28785,2021,January,"Opioids (T40.0-T40.4,T40.6)",158
+0400000US50,50,Vermont,,9216.657,28786,2021,January,Natural & semi-synthetic opioids (T40.2),30
+0400000US51,51,Virginia,,39490.086,28037,2021,January,"Natural & semi-synthetic opioids, incl. methadone (T40.2, T40.3)",365
+0400000US51,51,Virginia,,39490.086,28038,2021,January,"Natural, semi-synthetic, & synthetic opioids, incl. methadone (T40.2-T40.4)",1878
+0400000US51,51,Virginia,,39490.086,28039,2021,January,"Synthetic opioids, excl. methadone (T40.4)",1709
+0400000US51,51,Virginia,,39490.086,28040,2021,January,Methadone (T40.3),97
+0400000US51,51,Virginia,,39490.086,28041,2021,January,Cocaine (T40.5),552
+0400000US51,51,Virginia,,39490.086,28042,2021,January,Heroin (T40.1),499
+0400000US51,51,Virginia,,39490.086,28043,2021,January,Number of Drug Overdose Deaths,2246
+0400000US51,51,Virginia,,39490.086,28044,2021,January,Psychostimulants with abuse potential (T43.6),426
+0400000US51,51,Virginia,,39490.086,28045,2021,January,"Opioids (T40.0-T40.4,T40.6)",1926
+0400000US51,51,Virginia,,39490.086,28046,2021,January,Natural & semi-synthetic opioids (T40.2),283
+0400000US54,54,West Virginia,,24038.21,30997,2021,January,"Natural & semi-synthetic opioids, incl. methadone (T40.2, T40.3)",309
+0400000US54,54,West Virginia,,24038.21,30998,2021,January,"Natural, semi-synthetic, & synthetic opioids, incl. methadone (T40.2-T40.4)",1161
+0400000US54,54,West Virginia,,24038.21,30999,2021,January,"Synthetic opioids, excl. methadone (T40.4)",1096
+0400000US54,54,West Virginia,,24038.21,31000,2021,January,Methadone (T40.3),33
+0400000US54,54,West Virginia,,24038.21,31001,2021,January,Cocaine (T40.5),118
+0400000US54,54,West Virginia,,24038.21,31002,2021,January,Heroin (T40.1),139
+0400000US54,54,West Virginia,,24038.21,31003,2021,January,Number of Drug Overdose Deaths,1373
+0400000US54,54,West Virginia,,24038.21,31004,2021,January,Psychostimulants with abuse potential (T43.6),639
+0400000US54,54,West Virginia,,24038.21,31005,2021,January,"Opioids (T40.0-T40.4,T40.6)",1173
+0400000US54,54,West Virginia,,24038.21,31006,2021,January,Natural & semi-synthetic opioids (T40.2),282
+0400000US56,56,Wyoming,,97093.141,31737,2021,January,"Natural & semi-synthetic opioids, incl. methadone (T40.2, T40.3)",29
+0400000US56,56,Wyoming,,97093.141,31738,2021,January,"Natural, semi-synthetic, & synthetic opioids, incl. methadone (T40.2-T40.4)",48
+0400000US56,56,Wyoming,,97093.141,31739,2021,January,"Synthetic opioids, excl. methadone (T40.4)",24
+0400000US56,56,Wyoming,,97093.141,31740,2021,January,Methadone (T40.3),NA
+0400000US56,56,Wyoming,,97093.141,31741,2021,January,Cocaine (T40.5),NA
+0400000US56,56,Wyoming,,97093.141,31742,2021,January,Heroin (T40.1),13
+0400000US56,56,Wyoming,,97093.141,31743,2021,January,Number of Drug Overdose Deaths,97
+0400000US56,56,Wyoming,,97093.141,31744,2021,January,Psychostimulants with abuse potential (T43.6),32
+0400000US56,56,Wyoming,,97093.141,31745,2021,January,"Opioids (T40.0-T40.4,T40.6)",58
+0400000US56,56,Wyoming,,97093.141,31746,2021,January,Natural & semi-synthetic opioids (T40.2),29
