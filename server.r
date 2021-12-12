@@ -131,15 +131,28 @@ function(input, output) {
        
     })
     #Function for BigPharmaPerformance tab
-    output$myLineGraph <- renderPlot(
+    output$myDollarGraph <- renderPlot(
       {
         BigPharmaStockData %>%
           filter(conm %in% input$conm) %>%
           ggplot(aes(x = ymd(datadate), y = prccm, color = conm, group = conm)) +
           geom_line() +
           geom_point(aes(color = conm)) +
+          xlim(input$year_slider[1], input$year_slider[2]) +
           xlab("Year")                                      +
-          ylab("% Change in Monthly Closing Price")
+          ylab("Monthly Closing Price (in $)")
+      }
+    )
+    output$myPercentGraph <- renderPlot(
+      {
+        BigPharmaStockData %>%
+          filter(conm %in% input$conm) %>%
+          ggplot(aes(x = ymd(datadate), y = prccm, color = conm, group = conm)) +
+          geom_line() +
+          geom_point(aes(color = conm)) +
+          xlim(input$year_slider[1], input$year_slider[2]) +
+          xlab("Year")                                      +
+          ylab("Monthly Closing Price (in % change)")
       }
     )
     }
