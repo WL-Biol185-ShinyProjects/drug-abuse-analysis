@@ -10,7 +10,7 @@ BigPharmaStockData <- read.csv("BigPharmaStockData.csv")
 BigPharmaStockData$prccm <- as.numeric(as.character( BigPharmaStockData$prccm ))
 
 # 
-BigPharmaPerformanceText <-
+BigPharmaPerformance <-
   fluidPage(
     titlePanel("The Growth of Select Pharmecutical Companies as a Result of a Nationwide Push in Greater Prescribing for Pain"),
     fluidRow(box(width      = 12,

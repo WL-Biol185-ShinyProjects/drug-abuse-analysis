@@ -12,44 +12,7 @@ source("AboutPage.R")
 
 #Function for Drug Investment tab
 function(input, output) {
-  #Animated map for Prescription Drug Investment page 
-    output$InvestmentOvertime <- renderLeaflet({
-           FilteredStateData <- filter(geoIPC, years == input$yearsforinvestment)
-           geo@data <- left_join(geo@data, FilteredStateData, by = c("NAME" = "NAME"))
-           statespalette <- colorBin("Purples", domain = geoIPC$InvestmentPerCapita)
-           leaflet(data = geo) %>%
-                 setView(-96, 37.8, 4) %>%
-                     addPolygons(
-                           fillColor = ~statespalette(InvestmentPerCapita),
-                           weight = 2,
-                           label = geo@data$NAME,
-                           opacity = 1,
-                           color = "black",
-                           fillOpacity = .7 
-                            ) %>%
-                                addLegend("bottomright",
-                                    pal = statespalette,
-                                    values = ~InvestmentPerCapita,
-                                    opacity = .8,
-                                    title = "Investment Per Capita for States from 1991 to 2014"
-                                )}
-    )
-
-
-#Function for BigPharmaPerformance tab
-  output$myLineGraph <- renderPlot(
-    {
-      BigPharmaStockData %>%
-        filter(tic %in% input$tic) %>%
-        ggplot(aes(x = ymd(datadate), y = prccm, color = tic, group = tic)) +
-        geom_line() +
-        geom_point(aes(color = tic)) +
-        xlab("Year")                                      +
-        ylab("% Change in Monthly Closing Price")
-    }
-  )
-
-#2021 leaflet map for drug overdose deaths on the homepage
+    #2021 leaflet map for drug overdose deaths on the homepage
     output$OverdoseMap <- renderLeaflet({
                      OverdoseStateMaps2021 <- read_csv("OverdoseStateMaps2021.csv")
                      countryMap <- rgdal::readOGR("states.geo.json")
@@ -79,8 +42,31 @@ function(input, output) {
                                                       dashArray = "",
                                                       fillOpacity = 0.7,
                                                       bringToFront = TRUE
-  ))
-})
+     ))
+    })
+
+    #Animated map for Prescription Drug Investment page 
+    output$InvestmentOvertime <- renderLeaflet({
+      FilteredStateData <- filter(geoIPC, years == input$yearsforinvestment)
+      geo@data <- left_join(geo@data, FilteredStateData, by = c("NAME" = "NAME"))
+      statespalette <- colorBin("Purples", domain = geoIPC$InvestmentPerCapita)
+      leaflet(data = geo) %>%
+        setView(-96, 37.8, 4) %>%
+        addPolygons(
+          fillColor = ~statespalette(InvestmentPerCapita),
+          weight = 2,
+          label = geo@data$NAME,
+          opacity = 1,
+          color = "black",
+          fillOpacity = .7 
+        ) %>%
+        addLegend("bottomright",
+                  pal = statespalette,
+                  values = ~InvestmentPerCapita,
+                  opacity = .8,
+                  title = "Investment Per Capita for States from 1991 to 2014"
+        )}
+    )
     
     #Drug Overdose Leaflet on Prescription Drug Investment Page
     output$DrugOverdoseJan2015 <- renderLeaflet({
@@ -114,4 +100,16 @@ function(input, output) {
                                              bringToFront = TRUE))
        
     })
-}
+    #Function for BigPharmaPerformance tab
+    output$myLineGraph <- renderPlot(
+      {
+        BigPharmaStockData %>%
+          filter(tic %in% input$tic) %>%
+          ggplot(aes(x = ymd(datadate), y = prccm, color = tic, group = tic)) +
+          geom_line() +
+          geom_point(aes(color = tic)) +
+          xlab("Year")                                      +
+          ylab("% Change in Monthly Closing Price")
+      }
+    )
+    }
