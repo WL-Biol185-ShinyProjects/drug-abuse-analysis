@@ -52,7 +52,6 @@ function(input, output) {
       countryMap3@data <- left_join(countryMap3@data, 
                                    geoOverdoseStateHeatMaps2021, 
                                    by = c("NAME" = "StateName"))
-      # countryMap3@data <- geoOverdoseStateHeatMaps2021
         pal <- colorNumeric("YlOrRd", NULL)
         leaflet(countryMap3)                                                     %>%
           setView(-96, 37.8, 4)                                                %>%
@@ -65,7 +64,7 @@ function(input, output) {
                       weight           = 2,
                       color            = "white",
                       fillColor        = ~pal(countryMap3$DataValue),
-                      label            = ~paste0(NAME, ":", formatC(countryMap3$DataValue)),
+                      label            = ~paste0(NAME, ": ", formatC(countryMap3$DataValue)),
                       highlightOptions = highlightOptions(color       = "white",
                                                           fillOpacity  = 2,
                                                           bringToFront = TRUE)) %>%

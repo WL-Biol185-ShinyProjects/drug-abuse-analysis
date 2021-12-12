@@ -7,7 +7,7 @@ geoOverdoseStateHeatMaps2021 <- read.csv("geoOverdoseStateHeatMaps.csv")
 
 StateDrugData <-
   fluidPage(
-    titlePanel("Current Drug Overdose Counts by Drug Group and Subgroup"),
+    titlePanel("Current Drug Overdose Counts by Specific Drug Type from January 2020-2021"),
     sidebarLayout(
       sidebarPanel(
         selectInput(
@@ -17,9 +17,9 @@ StateDrugData <-
           selected = 'Number of Drug Overdose Deaths',
           multiple = FALSE)),
       mainPanel(
-          width = NULL,
-          title = "Overdoses Related to a Specific Drug Type during 12 month period ending in January 2021",
-          leafletOutput("OverdoseSpecificMap"),
-          "You can scroll over each state to view the total number of drug overdose deaths for that state in 2021.")
+            width = NULL,
+       #     "Overdoses by Specific Drug Type from January 2020-2021",
+            leafletOutput("OverdoseSpecificMap"),
+            "You can scroll over each state to view the total number of drug overdose deaths for that state during the 12 month period ending in January 2021.
+            Provisional overdose counts sourced from CDC's Vital Statistics Rapid Release program."))
     )
-  )
