@@ -11,7 +11,7 @@ geoIPC <- read.csv("geoIPC.csv")
 
 #Organizing Investment States to throw into the UI & Server
 InvestmentStates <- 
-  fluidPage( titlePanel("State Investment in Prescription Drugs"),
+  fluidPage( titlePanel("Public Expenditure on Prescription Drugs by State"),
          fluidRow(
              column( width = 12,
                    box(

@@ -9,7 +9,7 @@ BigPharmaPercent <- read_csv("~/drug-abuse-analysis/BigPharmaStockData34.csv")
 BigPharmaPercent$pct_change <- 0
 BigPharmaPercent <- BigPharmaPercent %>%
   group_by(conm) %>% 
-  mutate(pct_change = (prccm/lag(prccm) - 1) * 100)
+  mutate(pct_change = (prccm/lag(prccm, k = 12) - 1) * 100)
 
 View(BigPharmaPercent)
 

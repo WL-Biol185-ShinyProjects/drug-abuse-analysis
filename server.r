@@ -152,7 +152,7 @@ function(input, output) {
           geom_point(aes(color = conm)) +
           xlim(input$year_slider[1], input$year_slider[2]) +
           xlab("Year")                                      +
-          ylab("Monthly Closing Price (in % change)")
+          ylab("Monthly Closing Price (in % change versus 1 year prior)")
       }
     )
     }

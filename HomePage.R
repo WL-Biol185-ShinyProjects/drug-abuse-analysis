@@ -4,7 +4,7 @@ library(markdown)
 #organizing home page
 homepagetext <-
   fluidPage(
-     titlePanel("Home"),
+     titlePanel(h1("Home", align = "center")),
        fluidRow(
           column(
             width = 12,
@@ -18,15 +18,26 @@ homepagetext <-
       
             fluidRow(
                      column( 
-                        width = 8,
+                        width = 12,
                             box(
                               width = NULL,
                               title = "The Total Amount of Overdose Deaths in Each State for January 2021",
                               leafletOutput("OverdoseMap"),
                               "You can scroll over each state to view the total number of drug overdose deaths for that state in 2021.")),
-                     column(
-                         width = 4,
-                               img(src = "NYTPic.png",
-                                       width = "100%",
-                                       length = "100%"
-))))))
+                     # column(
+                     #     width = 4,
+                     #           img(src = "NYTPic.png",
+                     #                   width = "100%",
+                     #                   length = "100%"),
+          )
+       )
+          ),
+     mainPanel(h3("Current Opioid Epidemic News from Alcoholism and Drug Abuse Weekly Publication", align = "center"),
+       fluidRow(column(width = 12,
+                               tags$head(tags$script('!function(d,s,id){var js,fjs=d.getElementsByTagName(s)    [0],p=/^http:/.test(d.location)?\'http\':\'https\';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");')),
+                               column(width = 12, box(width = NULL, height = NULL,
+                                                     a("Tweets by @ADAWnews", class = "twitter-timeline", href = "https://twitter.com/ADAWnews")
+                               ))
+     )
+     ))
+  )
